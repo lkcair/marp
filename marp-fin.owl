@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+>
+  <rdf:Description rdf:about="https://w3id.org/marp/fin#ReportClaim">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>One statement in an analysis report.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/marp/fin"/>
+    <rdfs:label>Report claim</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/marp#Claim"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp/fin#filingType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment>The form the filing was made on, such as 10-K, 10-Q, or 8-K.</rdfs:comment>
+    <rdfs:domain rdf:resource="https://w3id.org/marp/fin#Filing"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/marp/fin"/>
+    <rdfs:label>filing type</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp/fin">
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</dcterms:created>
+    <dcterms:creator>Lucas Kojo Chehuen</dcterms:creator>
+    <dcterms:description xml:lang="en">The finance module of MARP. The values, documents, verdicts, reports, and regulatory effects a multi-agent system records when it analyses a financial instrument, together with the analyst roles such a system distributes work among.</dcterms:description>
+    <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</dcterms:modified>
+    <dcterms:publisher>Federal University of Juiz de Fora</dcterms:publisher>
+    <dcterms:title xml:lang="en">MARP finance: runtime provenance of financial analysis by agents</dcterms:title>
+    <vann:preferredNamespacePrefix>fin</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>https://w3id.org/marp/fin#</vann:preferredNamespaceUri>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <owl:imports rdf:resource="https://w3id.org/marp/core"/>
+    <owl:versionIRI rdf:resource="https://w3id.org/marp/fin/1.0"/>
+    <owl:versionInfo>1.0</owl:versionInfo>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp/fin#RegulatoryFiling">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>A submission made to a regulator's gateway.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/marp/fin"/>
+    <rdfs:label>Regulatory filing</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/marp#IrreversibleEffect"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp/fin#about">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment>The instrument a datum, a verdict, a claim, or a report is about.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/marp/fin"/>
+    <rdfs:label>about</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/marp/fin#Instrument"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp/fin#FilingRegistry">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>A dataset of regulatory disclosures, such as an exchange or regulator's filing index.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/marp/fin"/>
+    <rdfs:label>Filing registry</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp/fin#PredictionLabel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>A categorical verdict an analyst agent issued on an instrument.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/marp/fin"/>
+    <rdfs:label>Prediction label</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/marp#AgentOutput"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp/fin#Report">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>The analysis report a run delivers. Its members are its claims.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/marp/fin"/>
+    <rdfs:label>Report</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Collection"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp/fin#verdict">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/marp/fin#PredictionLabel"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/marp/fin"/>
+    <rdfs:label>verdict</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp/fin#solvencyAnalyst">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Role"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/marp/fin"/>
+    <rdfs:label>solvency analyst</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp/fin#MarketDatum">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>One quoted value drawn from a market feed.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/marp/fin"/>
+    <rdfs:label>Market datum</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/marp#SourceDatum"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp/fin#MarketFeed">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>A dataset of quoted market values: prices, volumes, ratios, statements.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/marp/fin"/>
+    <rdfs:label>Market feed</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp/fin#filingAnalyst">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Role"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/marp/fin"/>
+    <rdfs:label>filing analyst</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp/fin#Instrument">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>The security a run analyses, identified by its ticker.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/marp/fin"/>
+    <rdfs:label>Instrument</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp/fin#FilingDatum">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>One value copied out of a filing.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/marp/fin"/>
+    <rdfs:label>Filing datum</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="cb0"/>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/marp#SourceDatum"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp/fin#fundamentalAnalyst">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Role"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/marp/fin"/>
+    <rdfs:label>fundamental analyst</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp/fin#ClientNotice">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>A message delivered to a client.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/marp/fin"/>
+    <rdfs:label>Client notice</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/marp#ExternalEffect"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="cb0">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://www.w3.org/ns/prov#wasQuotedFrom"/>
+    <owl:someValuesFrom rdf:resource="https://w3id.org/marp/fin#Filing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp/fin#Filing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>A regulatory disclosure document, identified by its accession number.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/marp/fin"/>
+    <rdfs:label>Filing</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp/fin#ticker">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="https://w3id.org/marp/fin#Instrument"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/marp/fin"/>
+    <rdfs:label>ticker</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp/fin#technicalAnalyst">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Role"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/marp/fin"/>
+    <rdfs:label>technical analyst</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

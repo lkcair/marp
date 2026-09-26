@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+>
+  <rdf:Description rdf:about="https://w3id.org/marp">
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-07-15</dcterms:created>
+    <dcterms:creator>Lucas Kojo Chehuen</dcterms:creator>
+    <dcterms:description xml:lang="en">An OWL 2 DL ontology for the runtime provenance of multi-agent AI systems, specializing W3C PROV-O. Published in three modules: a core for any multi-agent AI system, a finance module for systems that analyse financial instruments, and an application module for the Samurai Terminal report engine. Each module imports the one below it.</dcterms:description>
+    <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-18</dcterms:modified>
+    <dcterms:publisher>Federal University of Juiz de Fora</dcterms:publisher>
+    <dcterms:title xml:lang="en">MARP: Multi-Agent Runtime Provenance</dcterms:title>
+    <vann:preferredNamespacePrefix>marp</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>https://w3id.org/marp#</vann:preferredNamespaceUri>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:seeAlso rdf:resource="https://w3id.org/marp/align"/>
+    <owl:imports rdf:resource="https://w3id.org/marp/core"/>
+    <owl:imports rdf:resource="https://w3id.org/marp/fin"/>
+    <owl:imports rdf:resource="https://w3id.org/marp/samurai"/>
+    <owl:priorVersion rdf:resource="https://w3id.org/marp/5.0"/>
+    <owl:versionIRI rdf:resource="https://w3id.org/marp/7.0"/>
+    <owl:versionInfo>7.0</owl:versionInfo>
+  </rdf:Description>
+</rdf:RDF>

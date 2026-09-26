@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:vann="http://purl.org/vocab/vann/"
+>
+  <rdf:Description rdf:about="https://w3id.org/marp/samurai#openrouter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#SoftwareAgent"/>
+    <rdfs:comment>The hosted gateway through which the engine reaches its language models.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/marp/samurai"/>
+    <rdfs:label>OpenRouter</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp/samurai#priceCache">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Collection"/>
+    <rdfs:comment>The table of quoted prices and fundamentals the terminal refreshes for each instrument.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/marp/samurai"/>
+    <rdfs:label>price_cache</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp/samurai#IngestionActivity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>Reads the instrument's data out of the caches and assembles the feature bundles.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/marp/samurai"/>
+    <rdfs:label>Ingestion</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp/samurai#AggregatedLabel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>The verdict the aggregator reconciled from the analysts' labels.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/marp/samurai"/>
+    <rdfs:label>Aggregated label</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/marp/fin#PredictionLabel"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp/samurai#support">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment>A base entity that appears in the expression.</rdfs:comment>
+    <rdfs:domain rdf:resource="https://w3id.org/marp/samurai#Derivation"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/marp/samurai"/>
+    <rdfs:label>support</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp/samurai#expression">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:comment>The polynomial in the engine's canonical infix syntax, over the identifiers of the supporting entities.</rdfs:comment>
+    <rdfs:domain rdf:resource="https://w3id.org/marp/samurai#Derivation"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/marp/samurai"/>
+    <rdfs:label>expression</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp/samurai#ReviewActivity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>Checks the report and may send it back for revision.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/marp/samurai"/>
+    <rdfs:label>Review</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp/samurai#hasDerivation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/marp/samurai"/>
+    <rdfs:label>has derivation</rdfs:label>
+    <rdfs:range rdf:resource="https://w3id.org/marp/samurai#Derivation"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp/samurai">
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</dcterms:created>
+    <dcterms:creator>Lucas Kojo Chehuen</dcterms:creator>
+    <dcterms:description xml:lang="en">The application module of MARP for the Samurai Terminal report engine. Declares the engine's steps, its evidence and verdict kinds, the how-provenance record it computes for every artifact, and the roles, stores, and services fixed by its architecture.</dcterms:description>
+    <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</dcterms:modified>
+    <dcterms:publisher>Federal University of Juiz de Fora</dcterms:publisher>
+    <dcterms:title xml:lang="en">MARP application module: the Samurai Terminal report engine</dcterms:title>
+    <vann:preferredNamespacePrefix>sam</vann:preferredNamespacePrefix>
+    <vann:preferredNamespaceUri>https://w3id.org/marp/samurai#</vann:preferredNamespaceUri>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <owl:imports rdf:resource="https://w3id.org/marp/fin"/>
+    <owl:versionIRI rdf:resource="https://w3id.org/marp/samurai/1.0"/>
+    <owl:versionInfo>1.0</owl:versionInfo>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp/samurai#secFilingsCache">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Collection"/>
+    <rdfs:comment>The table of filings fetched per instrument and filing type.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/marp/samurai"/>
+    <rdfs:label>sec_filings_cache</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp/samurai#solvencyScreen">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/mls#Model"/>
+    <rdfs:comment>The fitted estimator the solvency analyst runs before its language-model step.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/marp/samurai"/>
+    <rdfs:label>LightGBM solvency screen</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp/samurai#financialDataCache">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Collection"/>
+    <rdfs:comment>The table of financial statements fetched per instrument.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/marp/samurai"/>
+    <rdfs:label>financial_data_cache</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp/samurai#reviewer">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Role"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/marp/samurai"/>
+    <rdfs:label>reviewer</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp/samurai#Derivation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>The how-provenance expression the engine computes for an artifact, as a provenance polynomial over the base entities that support it.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/marp/samurai"/>
+    <rdfs:label>Derivation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Entity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp/samurai#secFactsCache">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Collection"/>
+    <rdfs:comment>The table of XBRL facts fetched per instrument.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/marp/samurai"/>
+    <rdfs:label>sec_facts_cache</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp/samurai#aggregator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Role"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/marp/samurai"/>
+    <rdfs:label>aggregator</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp/samurai#GenerationActivity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>Writes the report and its claims.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/marp/samurai"/>
+    <rdfs:label>Generation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp/samurai#AggregationActivity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>Reconciles the analysts' verdicts into one label.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/marp/samurai"/>
+    <rdfs:label>Aggregation</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp/samurai#SecDatum">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>A value copied from a filing held by the SEC, either from the document or from its XBRL facts.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/marp/samurai"/>
+    <rdfs:label>SEC datum</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/marp/fin#FilingDatum"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp/samurai#FeatureBundle">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>The evidence assembled for one analyst: the data of the instrument the analyst's template asks for.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/marp/samurai"/>
+    <rdfs:label>Feature bundle</rdfs:label>
+    <rdfs:subClassOf rdf:resource="https://w3id.org/marp#EvidenceBundle"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp/samurai#generator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Role"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/marp/samurai"/>
+    <rdfs:label>report generator</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp/samurai#controller">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/prov#Role"/>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/marp/samurai"/>
+    <rdfs:label>controller</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp/samurai#RoutingActivity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>The controller decides which analysts receive the bundles.</rdfs:comment>
+    <rdfs:isDefinedBy rdf:resource="https://w3id.org/marp/samurai"/>
+    <rdfs:label>Routing</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/prov#Activity"/>
+  </rdf:Description>
+</rdf:RDF>

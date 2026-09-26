@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:dcterms="http://purl.org/dc/terms/"
+   xmlns:marp="https://w3id.org/marp#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+>
+  <rdf:Description rdf:about="https://w3id.org/marp#otelAttribute">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:comment>The attribute key an OpenTelemetry GenAI span carries the value of this datatype property under.</rdfs:comment>
+    <rdfs:label>OpenTelemetry GenAI attribute</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp#AgentOutput">
+    <marp:otelIdentifier>gen_ai.response.id</marp:otelIdentifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3id.org/agentic-ai/onto#LanguageModel">
+    <skos:closeMatch rdf:resource="http://www.w3.org/ns/mls#Model"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp#MemoryRecord">
+    <rdfs:comment>A search_memory span is a step that used the record; a create_memory or upsert_memory span is the step that generated it; an update_memory span generates the record that is a prov:wasRevisionOf the one it replaced.</rdfs:comment>
+    <marp:otelIdentifier>gen_ai.memory.record.id</marp:otelIdentifier>
+    <marp:otelOperation>create_memory</marp:otelOperation>
+    <marp:otelOperation>search_memory</marp:otelOperation>
+    <marp:otelOperation>update_memory</marp:otelOperation>
+    <marp:otelOperation>upsert_memory</marp:otelOperation>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp#OrchestratedAgent">
+    <marp:otelIdentifier>gen_ai.agent.id</marp:otelIdentifier>
+    <marp:otelOperation>invoke_agent</marp:otelOperation>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp#ToolInvocation">
+    <marp:otelIdentifier>gen_ai.tool.call.id</marp:otelIdentifier>
+    <marp:otelOperation>execute_tool</marp:otelOperation>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp#otelIdentifier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:comment>The attribute whose value identifies an instance of this class, or the object of this property, so that a node of the record and a span of the trace name the same thing.</rdfs:comment>
+    <rdfs:label>OpenTelemetry GenAI identifier</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp/align">
+    <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-08-10</dcterms:created>
+    <dcterms:creator>Lucas Kojo Chehuen</dcterms:creator>
+    <dcterms:description xml:lang="en">Correspondences from MARP to the dataset, model, agent-design, versioning, and telemetry vocabularies a deployment exchanges records with. The telemetry side maps the spans and attributes of the OpenTelemetry GenAI semantic conventions onto the classes and properties they populate.</dcterms:description>
+    <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+    <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-22</dcterms:modified>
+    <dcterms:title xml:lang="en">MARP alignments</dcterms:title>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:seeAlso rdf:resource="https://github.com/open-telemetry/semantic-conventions-genai"/>
+    <rdfs:seeAlso rdf:resource="https://w3id.org/marp"/>
+    <owl:versionInfo>3.0</owl:versionInfo>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp#Inference">
+    <marp:otelOperation>chat</marp:otelOperation>
+    <marp:otelOperation>generate_content</marp:otelOperation>
+    <marp:otelOperation>text_completion</marp:otelOperation>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp#otelOperation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:comment>The gen_ai.operation.name of the span an instance of this class is read from: the span itself for an activity class, the span's output for an entity class, and the span's agent for an agent class.</rdfs:comment>
+    <rdfs:label>OpenTelemetry GenAI operation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp#PromptTemplate">
+    <marp:otelIdentifier>gen_ai.prompt.name</marp:otelIdentifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3id.org/agentic-ai/onto#Memory">
+    <rdfs:comment>AgentO describes the memory component an agent is configured with; MARP records the individual entries a run read and wrote.</rdfs:comment>
+    <skos:relatedMatch rdf:resource="https://w3id.org/marp#MemoryRecord"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp#invokedTool">
+    <marp:otelIdentifier>gen_ai.tool.name</marp:otelIdentifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp#onModel">
+    <marp:otelIdentifier>gen_ai.request.model</marp:otelIdentifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp#RoutingDecision">
+    <marp:otelOperation>plan</marp:otelOperation>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3id.org/agentic-ai/onto#Resource">
+    <rdfs:comment>AgentO describes what an agent may access; MARP records the value a run ingested from it.</rdfs:comment>
+    <skos:relatedMatch rdf:resource="https://w3id.org/marp#SourceDatum"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp#modelVersion">
+    <marp:otelAttribute>gen_ai.response.model</marp:otelAttribute>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp#sampleCount">
+    <marp:otelAttribute>gen_ai.request.choice.count</marp:otelAttribute>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://schema.org/Dataset">
+    <skos:closeMatch rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp#templateVersion">
+    <skos:closeMatch rdf:resource="http://purl.org/pav/version"/>
+    <marp:otelAttribute>gen_ai.prompt.version</marp:otelAttribute>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp#SourceDatum">
+    <marp:otelOperation>retrieval</marp:otelOperation>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp#drawnFrom">
+    <marp:otelIdentifier>gen_ai.data_source.id</marp:otelIdentifier>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp#topP">
+    <marp:otelAttribute>gen_ai.request.top_p</marp:otelAttribute>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/fair4ml/MLModel">
+    <skos:closeMatch rdf:resource="http://www.w3.org/ns/mls#Model"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp#randomSeed">
+    <marp:otelAttribute>gen_ai.request.seed</marp:otelAttribute>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3id.org/agentic-ai/onto#Agent">
+    <skos:closeMatch rdf:resource="https://w3id.org/marp#OrchestratedAgent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp#temperature">
+    <marp:otelAttribute>gen_ai.request.temperature</marp:otelAttribute>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/marp#maxOutputTokens">
+    <marp:otelAttribute>gen_ai.request.max_tokens</marp:otelAttribute>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.w3id.org/agentic-ai/onto#Tool">
+    <rdfs:comment>AgentO describes the tool an agent is configured with; MARP records the call a step made to it.</rdfs:comment>
+    <skos:relatedMatch rdf:resource="https://w3id.org/marp#invokedTool"/>
+  </rdf:Description>
+</rdf:RDF>
