@@ -1,0 +1,905 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix provai: <https://w3id.org/prov-ai#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/08ce9cd133c84ebba955207ed273186e-output> a prov:Entity ;
+    rdfs:label "sender output" ;
+    prov:value "{\"messages\": [{\"role\": \"system\", \"meta\": {}, \"name\": null, \"content\": [{\"text\": \"You send briefs. Call send_brief exactly once, with the brief you are given and to=client.\"}]}, {\"role\": \"user\", \"meta\": {}, \"name\": null, \"content\": [{\"text\": \"Send this brief to client with send_brief:\\nLisbon is the capital of Portugal and is situated along the Tagus estuary. The city is currently enjoying a clear sky with a pleasant temperature of 21\\u00b0C.\"}]}, {\"role\": \"assistant\", \"meta\": {\"model\": \"google/gemma-4-26b-a4b-it\", \"index\": 0, \"finish_reason\": \"tool_calls\", \"usage\": {\"completion_tokens\": 55, \"prompt_tokens\": 143, \"total_tokens\": 198, \"completion_tokens_details\": {\"accepted_prediction_tokens\": null, \"audio_tokens\": 0, \"reasoning_tokens\": 0, \"rejected_prediction_tokens\": null, \"text_tokens\": null, \"image_tokens\": 0}, \"prompt_tokens_details\": {\"audio_tokens\": 0, \"cache_write_tokens\": 0, \"cached_tokens\": 0, \"image_tokens\": null, \"text_tokens\": null, \"video_tokens\": 0}, \"cost\": 2.937e-05, \"is_byok\": false, \"cost_details\": {\"upstream_inference_cost\": 2.937e-05, \"upstream_inference_prompt_cost\": 1.287e-05, \"upstream_inference_completions_cost\": 1.65e-05}}}, \"name\": null, \"content\": [{\"tool_call\": {\"tool_name\": \"send_brief\", \"arguments\": {\"text\": \"Lisbon is the capital of Portugal and is situated along the Tagus estuary. The city is currently enjoying a clear sky with a pleasant temperature of 21\\u00b0C.\", \"to\": \"client\"}, \"id\": \"chatcmpl-tool-80b8a32e35d05b81\", \"extra\": null}}]}, {\"role\": \"tool\", \"meta\": {}, \"name\": null, \"content\": [{\"tool_call_result\": {\"result\": \"/root/PapersABC/PROV-AI/v10/data/runs/haystack/hs-20261002T155430/brief-to-client.txt\", \"origin\": {\"tool_name\": \"send_brief\", \"arguments\": {\"text\": \"Lisbon is the capital of Portugal and is situated along the Tagus estuary. The city is currently enjoying a clear sky with a pleasant temperature of 21\\u00b0C.\", \"to\": \"client\"}, \"id\": \"chatcmpl-tool-80b8a32e35d05b81\", \"extra\": null}, \"error\": false}}]}], \"step_count\": 1, \"token_usage\": {\"completion_tokens\": 55, \"prompt_tokens\": 143, \"total_tokens\": 198, \"completion_tokens_details\": {\"accepted_prediction_tokens\": null, \"audio_tokens\": 0, \"reasoning_tokens\": 0, \"rejected_prediction_tokens\": null, \"text_tokens\": null, \"image_tokens\": 0}, \"prompt_tokens_details\": {\"audio_tokens\": 0, \"cache_write_tokens\": 0, \"cached_tokens\": 0, \"image_tokens\": null, \"text_tokens\": null, \"video_tokens\": 0}, \"cost\": 2.937e-05, \"is_byok\": false, \"cost_details\": {\"upstream_inference_cost\": 2.937e-05, \"upstream_inference_prompt_cost\": 1.287e-05, \"upstream_inference_completions_cost\": 1.65e-05}}, \"tool_call_counts\": {\"send_brief\": 1}, \"exit_reason\": \"send_brief\", \"last_message\": {\"role\": \"tool\", \"meta\": {}, \"name\": null, \"content\": [{\"tool_call_result\": {\"result\": \"/root/PapersABC/PROV-AI/v10/data/runs/haystack/hs-20261002T155430/brief-to-client.txt\", \"origin\": {\"tool_name\": \"send_brief\", \"arguments\": {\"text\": \"Lisbon is the capital of Portugal and is situated along the Tagus estuary. The city is currently enjoying a clear sky with a pleasant temperature of 21\\u00b0C.\", \"to\": \"client\"}, \"id\": \"chatcmpl-tool-80b8a32e35d05b81\", \"extra\": null}, \"error\": false}}]}}" ;
+    prov:wasGeneratedBy <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/08ce9cd133c84ebba955207ed273186e> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/0x60444f9b3c34d292-output> a provai:Message ;
+    rdfs:label "model output" ;
+    prov:value "{\"replies\": [\"ChatMessage(_role=<ChatRole.ASSISTANT: 'assistant'>, _content=[TextContent(text='PASS')], _name=None, _meta={'model': 'google/gemma-4-26b-a4b-it', 'index': 0, 'finish_reason': 'stop', 'usage': {'completion_tokens': 2, 'prompt_tokens': 61, 'total_tokens': 63, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': None, 'text_tokens': None, 'image_tokens': 0}, 'prompt_tokens_details': {'audio_tokens': 0, 'cache_write_tokens': 0, 'cached_tokens': 0, 'image_tokens': None, 'text_tokens': None, 'video_tokens': 0}, 'cost': 3.002e-06, 'is_byok': False, 'cost_details': {'upstream_inference_cost': 3.002e-06, 'upstream_inference_prompt_cost': 2.562e-06, 'upstream_inference_completions_cost': 4.4e-07}}})\"]}" ;
+    prov:wasGeneratedBy <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/0x60444f9b3c34d292> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/0x76d58376af106ef8-output> a provai:Message ;
+    rdfs:label "model output" ;
+    prov:value "{\"replies\": [\"ChatMessage(_role=<ChatRole.ASSISTANT: 'assistant'>, _content=[TextContent(text='```json\\\\n[\\\"weather\\\", \\\"facts\\\"]\\\\n```')], _name=None, _meta={'model': 'google/gemma-4-26b-a4b-it', 'index': 0, 'finish_reason': 'stop', 'usage': {'completion_tokens': 12, 'prompt_tokens': 46, 'total_tokens': 58, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': None, 'text_tokens': None, 'image_tokens': 0}, 'prompt_tokens_details': {'audio_tokens': 0, 'cache_write_tokens': 0, 'cached_tokens': 0, 'image_tokens': None, 'text_tokens': None, 'video_tokens': 0}, 'cost': 7.52e-06, 'is_byok': False, 'cost_details': {'upstream_inference_cost': 7.52e-06, 'upstream_inference_prompt_cost': 3.68e-06, 'upstream_inference_completions_cost': 3.84e-06}}})\"]}" ;
+    prov:wasGeneratedBy <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/0x76d58376af106ef8> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/92261cdafcfe41d7b529ec17c3b8c5b0-result> a prov:Entity ;
+    rdfs:label "send_brief result" ;
+    prov:value "/root/PapersABC/PROV-AI/v10/data/runs/haystack/hs-20261002T155430/brief-to-client.txt" ;
+    prov:wasGeneratedBy <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/92261cdafcfe41d7b529ec17c3b8c5b0> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/bce6091a50044488828995c590527515-effect-2026-10-02T15%3A54%3A53.548835%2B00%3A00> a provai:Effect ;
+    rdfs:label "effect" ;
+    prov:value "/root/PapersABC/PROV-AI/v10/data/runs/haystack/hs-20261002T155430/brief-to-client.txt" ;
+    prov:wasAttributedTo <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/writer> ;
+    prov:wasGeneratedBy <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/92261cdafcfe41d7b529ec17c3b8c5b0> ;
+    provai:target "/root/PapersABC/PROV-AI/v10/data/runs/haystack/hs-20261002T155430/brief-to-client.txt" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/memory/notes> a provai:Memory ;
+    rdfs:label "notes" ;
+    prov:hadMember <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/notes%2FLisbon%2F1> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/1fe53450cd7f400aaff1349455259111> a provai:MemoryAccess ;
+    rdfs:label "memory read" ;
+    prov:endedAtTime "2026-10-02T15:54:46.261010+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:46.261001+00:00"^^xsd:dateTime ;
+    prov:used <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/notes%2FLisbon%2F1> ;
+    prov:wasAssociatedWith <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/writer> ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/5524c28260ad44d79d48531c81517c02> ;
+    provai:status "completed" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/3ed197e277984f608c7e2887a8b88d3b> a provai:Check ;
+    rdfs:label "check" ;
+    prov:endedAtTime "2026-10-02T15:54:47.268137+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:47.268128+00:00"^^xsd:dateTime ;
+    prov:wasAssociatedWith <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/evaluator> ;
+    provai:checked <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/eb00de25dbf2471484e44ce50c09ee5f-output> ;
+    provai:iteration 1 ;
+    provai:outcome "fail" ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/50ea3cce112a4fa2a1886a591161240b> ;
+    provai:reason "the first draft is always sent back for revision" ;
+    provai:status "completed" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/6d6b42e4e7a148c79fe2ebdac1476314> a provai:MemoryAccess ;
+    rdfs:label "memory read" ;
+    prov:endedAtTime "2026-10-02T15:54:48.548247+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:48.548227+00:00"^^xsd:dateTime ;
+    prov:used <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/notes%2FLisbon%2F1> ;
+    prov:wasAssociatedWith <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/writer> ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/88ce3d2e936c4efa8851db7e19be4720> ;
+    provai:status "completed" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/eb548304a834464ca5e414de89bcddee> a provai:Check ;
+    rdfs:label "check" ;
+    prov:endedAtTime "2026-10-02T15:54:50.967198+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:50.967190+00:00"^^xsd:dateTime ;
+    prov:wasAssociatedWith <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/evaluator> ;
+    provai:checked <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/a6d4ec55d4794e7aa74001e5787af8dc-output> ;
+    provai:iteration 2 ;
+    provai:outcome "pass" ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/539774a5fb0c4d029f6f308943b7b11d> ;
+    provai:reason "PASS" ;
+    provai:status "completed" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/approver> a prov:Person ;
+    rdfs:label "approver" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/translator_agent> a provai:Agent ;
+    rdfs:label "translator_agent" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/0x60444f9b3c34d292-input> a provai:Message ;
+    rdfs:label "model input" ;
+    prov:value "{\"messages\": [\"ChatMessage(_role=<ChatRole.USER: 'user'>, _content=[TextContent(text='Does this brief mention the weather? Answer PASS or FAIL.\\\\nLisbon is the capital of Portugal and is situated along the Tagus estuary. The city is currently enjoying a clear sky with a pleasant temperature of 21°C.')], _name=None, _meta={})\"]}" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/0x76d58376af106ef8-input> a provai:Message ;
+    rdfs:label "model input" ;
+    prov:value "{\"messages\": [\"ChatMessage(_role=<ChatRole.USER: 'user'>, _content=[TextContent(text=\\\"Agents: weather, facts, translator. Which agents are needed for a short brief on Lisbon's weather and facts? Answer with a JSON list of agent names.\\\")], _name=None, _meta={})\"]}" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/1d88c69e5c274a8eb453c1976bc71bd5-output> a prov:Entity ;
+    rdfs:label "review output" ;
+    prov:value "{\"revise\": [{\"role\": \"user\", \"meta\": {}, \"name\": null, \"content\": [{\"text\": \"The draft failed review: the first draft is always sent back for revision. Revise it, calling read_note for Lisbon first:\\nLisbon is the capital of Portugal and is situated along the Tagus estuary. The city is currently enjoying a clear sky with a pleasant temperature of 21\\u00b0C.\"}]}]}" ;
+    prov:wasGeneratedBy <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/1d88c69e5c274a8eb453c1976bc71bd5> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/1e77f4f4856947539115383567b22d6d-input> a provai:Message ;
+    rdfs:label "model input" ;
+    prov:value "{\"messages\": [\"ChatMessage(_role=<ChatRole.SYSTEM: 'system'>, _content=[TextContent(text='You write two-sentence briefs about a city. Always call read_note for the city first. Reply with the brief only.')], _name=None, _meta={})\", \"ChatMessage(_role=<ChatRole.USER: 'user'>, _content=[TextContent(text='The draft failed review: the first draft is always sent back for revision. Revise it, calling read_note for Lisbon first:\\\\nLisbon is the capital of Portugal and is situated along the Tagus estuary. The city is currently enjoying a clear sky with a pleasant temperature of 21°C.')], _name=None, _meta={})\"], \"tools\": [\"Tool(name='read_note', description='Read the shared note about a city.', parameters={'properties': {'city': {'type': 'string'}}, 'required': ['city'], 'type': 'object'}, function=<function read_note at 0x7faae58a9ee0>, outputs_to_string=None, inputs_from_state=None, outputs_to_state=None, async_function=None)\"]}" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/1e77f4f4856947539115383567b22d6d-output> a provai:Message ;
+    rdfs:label "model output" ;
+    prov:value "{\"replies\": [\"ChatMessage(_role=<ChatRole.ASSISTANT: 'assistant'>, _content=[ToolCall(tool_name='read_note', arguments={'city': 'Lisbon'}, id='chatcmpl-tool-92883ab7b37eaf02', extra=None)], _name=None, _meta={'model': 'google/gemma-4-26b-a4b-it', 'index': 0, 'finish_reason': 'tool_calls', 'usage': {'completion_tokens': 16, 'prompt_tokens': 153, 'total_tokens': 169, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': None, 'text_tokens': None, 'image_tokens': 0}, 'prompt_tokens_details': {'audio_tokens': 0, 'cache_write_tokens': 0, 'cached_tokens': 0, 'image_tokens': None, 'text_tokens': None, 'video_tokens': 0}, 'cost': 1.857e-05, 'is_byok': False, 'cost_details': {'upstream_inference_cost': 1.857e-05, 'upstream_inference_prompt_cost': 1.377e-05, 'upstream_inference_completions_cost': 4.8e-06}}})\"]}" ;
+    prov:wasGeneratedBy <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/1e77f4f4856947539115383567b22d6d> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/2f0548ff60984fa5b7cf7f8456e4d0dd-output> a prov:Entity ;
+    rdfs:label "weather_agent output" ;
+    prov:qualifiedDerivation <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/2f0548ff60984fa5b7cf7f8456e4d0dd-output/derivation/e7110f04627d4ced979ec66812ce8700-output> ;
+    prov:value "{\"messages\": [{\"role\": \"system\", \"meta\": {}, \"name\": null, \"content\": [{\"text\": \"You do not know the weather. Always call get_weather first, even if an earlier attempt failed. Answer in one sentence after calling your tool.\"}]}, {\"role\": \"user\", \"meta\": {}, \"name\": null, \"content\": [{\"text\": \"Weather in Lisbon?\"}]}, {\"role\": \"assistant\", \"meta\": {\"model\": \"google/gemma-4-26b-a4b-it\", \"index\": 0, \"finish_reason\": \"tool_calls\", \"usage\": {\"completion_tokens\": 16, \"prompt_tokens\": 96, \"total_tokens\": 112, \"completion_tokens_details\": {\"accepted_prediction_tokens\": null, \"audio_tokens\": 0, \"reasoning_tokens\": 0, \"rejected_prediction_tokens\": null, \"text_tokens\": null, \"image_tokens\": 0}, \"prompt_tokens_details\": {\"audio_tokens\": 0, \"cache_write_tokens\": 0, \"cached_tokens\": 0, \"image_tokens\": null, \"text_tokens\": null, \"video_tokens\": 0}, \"cost\": 1.344e-05, \"is_byok\": false, \"cost_details\": {\"upstream_inference_cost\": 1.344e-05, \"upstream_inference_prompt_cost\": 8.64e-06, \"upstream_inference_completions_cost\": 4.8e-06}}}, \"name\": null, \"content\": [{\"tool_call\": {\"tool_name\": \"get_weather\", \"arguments\": {\"city\": \"Lisbon\"}, \"id\": \"chatcmpl-tool-8889b5e4925b9f62\", \"extra\": null}}]}, {\"role\": \"tool\", \"meta\": {}, \"name\": null, \"content\": [{\"tool_call_result\": {\"result\": \"Failed to invoke Tool `get_weather` with parameters {'city': 'Lisbon'}. Error: weather service timed out\", \"origin\": {\"tool_name\": \"get_weather\", \"arguments\": {\"city\": \"Lisbon\"}, \"id\": \"chatcmpl-tool-8889b5e4925b9f62\", \"extra\": null}, \"error\": true}}]}, {\"role\": \"assistant\", \"meta\": {\"model\": \"google/gemma-4-26b-a4b-it\", \"index\": 0, \"finish_reason\": \"tool_calls\", \"usage\": {\"completion_tokens\": 20, \"prompt_tokens\": 149, \"total_tokens\": 169, \"completion_tokens_details\": {\"accepted_prediction_tokens\": null, \"audio_tokens\": 0, \"reasoning_tokens\": 2, \"rejected_prediction_tokens\": null, \"text_tokens\": null, \"image_tokens\": 0}, \"prompt_tokens_details\": {\"audio_tokens\": 0, \"cache_write_tokens\": 0, \"cached_tokens\": 96, \"image_tokens\": null, \"text_tokens\": null, \"video_tokens\": 0}, \"cost\": 1.557e-05, \"is_byok\": false, \"cost_details\": {\"upstream_inference_cost\": 1.557e-05, \"upstream_inference_prompt_cost\": 9.57e-06, \"upstream_inference_completions_cost\": 6e-06}}}, \"name\": null, \"content\": [{\"tool_call\": {\"tool_name\": \"get_weather\", \"arguments\": {\"city\": \"Lisbon\"}, \"id\": \"chatcmpl-tool-88bd7c95f8137f43\", \"extra\": null}}]}, {\"role\": \"tool\", \"meta\": {}, \"name\": null, \"content\": [{\"tool_call_result\": {\"result\": \"Lisbon: 21 C, clear sky\", \"origin\": {\"tool_name\": \"get_weather\", \"arguments\": {\"city\": \"Lisbon\"}, \"id\": \"chatcmpl-tool-88bd7c95f8137f43\", \"extra\": null}, \"error\": false}}]}, {\"role\": \"assistant\", \"meta\": {\"model\": \"google/gemma-4-26b-a4b-it\", \"index\": 0, \"finish_reason\": \"stop\", \"usage\": {\"completion_tokens\": 21, \"prompt_tokens\": 188, \"total_tokens\": 209, \"completion_tokens_details\": {\"accepted_prediction_tokens\": null, \"audio_tokens\": 0, \"reasoning_tokens\": 2, \"rejected_prediction_tokens\": null, \"text_tokens\": null, \"image_tokens\": 0}, \"prompt_tokens_details\": {\"audio_tokens\": 0, \"cache_write_tokens\": 0, \"cached_tokens\": 0, \"image_tokens\": null, \"text_tokens\": null, \"video_tokens\": 0}, \"cost\": 2.322e-05, \"is_byok\": false, \"cost_details\": {\"upstream_inference_cost\": 2.322e-05, \"upstream_inference_prompt_cost\": 1.692e-05, \"upstream_inference_completions_cost\": 6.3e-06}}}, \"name\": null, \"content\": [{\"text\": \"The current weather in Lisbon is 21\\u00b0C with a clear sky.\"}]}], \"step_count\": 3, \"token_usage\": {\"completion_tokens\": 57, \"prompt_tokens\": 433, \"total_tokens\": 490, \"completion_tokens_details\": {\"accepted_prediction_tokens\": null, \"audio_tokens\": 0, \"reasoning_tokens\": 4, \"rejected_prediction_tokens\": null, \"text_tokens\": null, \"image_tokens\": 0}, \"prompt_tokens_details\": {\"audio_tokens\": 0, \"cache_write_tokens\": 0, \"cached_tokens\": 96, \"image_tokens\": null, \"text_tokens\": null, \"video_tokens\": 0}, \"cost\": 5.223e-05, \"is_byok\": 0, \"cost_details\": {\"upstream_inference_cost\": 5.223e-05, \"upstream_inference_prompt_cost\": 3.513e-05, \"upstream_inference_completions_cost\": 1.71e-05}}, \"tool_call_counts\": {\"get_weather\": 2}, \"exit_reason\": \"text\", \"last_message\": {\"role\": \"assistant\", \"meta\": {\"model\": \"google/gemma-4-26b-a4b-it\", \"index\": 0, \"finish_reason\": \"stop\", \"usage\": {\"completion_tokens\": 21, \"prompt_tokens\": 188, \"total_tokens\": 209, \"completion_tokens_details\": {\"accepted_prediction_tokens\": null, \"audio_tokens\": 0, \"reasoning_tokens\": 2, \"rejected_prediction_tokens\": null, \"text_tokens\": null, \"image_tokens\": 0}, \"prompt_tokens_details\": {\"audio_tokens\": 0, \"cache_write_tokens\": 0, \"cached_tokens\": 0, \"image_tokens\": null, \"text_tokens\": null, \"video_tokens\": 0}, \"cost\": 2.322e-05, \"is_byok\": false, \"cost_details\": {\"upstream_inference_cost\": 2.322e-05, \"upstream_inference_prompt_cost\": 1.692e-05, \"upstream_inference_completions_cost\": 6.3e-06}}}, \"name\": null, \"content\": [{\"text\": \"The current weather in Lisbon is 21\\u00b0C with a clear sky.\"}]}}" ;
+    prov:wasDerivedFrom <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/e7110f04627d4ced979ec66812ce8700-output> ;
+    prov:wasGeneratedBy <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/2f0548ff60984fa5b7cf7f8456e4d0dd> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/2f0548ff60984fa5b7cf7f8456e4d0dd-output/derivation/e7110f04627d4ced979ec66812ce8700-output> a prov:Derivation ;
+    prov:entity <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/e7110f04627d4ced979ec66812ce8700-output> ;
+    provai:knownBy "inferred" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/38bac4dbf9d3467a8ca1ad7d2d2e1a12-input> a provai:Message ;
+    rdfs:label "model input" ;
+    prov:value "{\"messages\": [\"ChatMessage(_role=<ChatRole.SYSTEM: 'system'>, _content=[TextContent(text='You do not know facts about cities. Always call search_facts first. Answer in one sentence after calling your tool.')], _name=None, _meta={})\", \"ChatMessage(_role=<ChatRole.USER: 'user'>, _content=[TextContent(text='Facts about Lisbon?')], _name=None, _meta={})\", \"ChatMessage(_role=<ChatRole.ASSISTANT: 'assistant'>, _content=[ToolCall(tool_name='search_facts', arguments={'city': 'Lisbon'}, id='chatcmpl-tool-ac627c8565d0ad3a', extra=None)], _name=None, _meta={'model': 'google/gemma-4-26b-a4b-it', 'index': 0, 'finish_reason': 'tool_calls', 'usage': {'completion_tokens': 16, 'prompt_tokens': 93, 'total_tokens': 109, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': None, 'text_tokens': None, 'image_tokens': 0}, 'prompt_tokens_details': {'audio_tokens': 0, 'cache_write_tokens': 0, 'cached_tokens': 0, 'image_tokens': None, 'text_tokens': None, 'video_tokens': 0}, 'cost': 1.317e-05, 'is_byok': False, 'cost_details': {'upstream_inference_cost': 1.317e-05, 'upstream_inference_prompt_cost': 8.37e-06, 'upstream_inference_completions_cost': 4.8e-06}}})\", \"ChatMessage(_role=<ChatRole.TOOL: 'tool'>, _content=[ToolCallResult(result='Lisbon is the capital of Portugal and lies on the Tagus estuary.', origin=ToolCall(tool_name='search_facts', arguments={'city': 'Lisbon'}, id='chatcmpl-tool-ac627c8565d0ad3a', extra=None), error=False)], _name=None, _meta={})\"], \"tools\": [\"Tool(name='search_facts', description='Facts about a city from the document store.', parameters={'properties': {'city': {'type': 'string'}}, 'required': ['city'], 'type': 'object'}, function=<function search_facts at 0x7faae58a9da0>, outputs_to_string=None, inputs_from_state=None, outputs_to_state=None, async_function=None)\"]}" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/3b785633bdbe4d87ae12179feda7f093-input> a provai:Message ;
+    rdfs:label "model input" ;
+    prov:value "{\"messages\": [\"ChatMessage(_role=<ChatRole.SYSTEM: 'system'>, _content=[TextContent(text='You do not know the weather. Always call get_weather first, even if an earlier attempt failed. Answer in one sentence after calling your tool.')], _name=None, _meta={})\", \"ChatMessage(_role=<ChatRole.USER: 'user'>, _content=[TextContent(text='Weather in Lisbon?')], _name=None, _meta={})\", \"ChatMessage(_role=<ChatRole.ASSISTANT: 'assistant'>, _content=[ToolCall(tool_name='get_weather', arguments={'city': 'Lisbon'}, id='chatcmpl-tool-8889b5e4925b9f62', extra=None)], _name=None, _meta={'model': 'google/gemma-4-26b-a4b-it', 'index': 0, 'finish_reason': 'tool_calls', 'usage': {'completion_tokens': 16, 'prompt_tokens': 96, 'total_tokens': 112, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': None, 'text_tokens': None, 'image_tokens': 0}, 'prompt_tokens_details': {'audio_tokens': 0, 'cache_write_tokens': 0, 'cached_tokens': 0, 'image_tokens': None, 'text_tokens': None, 'video_tokens': 0}, 'cost': 1.344e-05, 'is_byok': False, 'cost_details': {'upstream_inference_cost': 1.344e-05, 'upstream_inference_prompt_cost': 8.64e-06, 'upstream_inference_completions_cost': 4.8e-06}}})\", \"ChatMessage(_role=<ChatRole.TOOL: 'tool'>, _content=[ToolCallResult(result=\\\"Failed to invoke Tool `get_weather` with parameters {'city': 'Lisbon'}. Error: weather service timed out\\\", origin=ToolCall(tool_name='get_weather', arguments={'city': 'Lisbon'}, id='chatcmpl-tool-8889b5e4925b9f62', extra=None), error=True)], _name=None, _meta={})\"], \"tools\": [\"Tool(name='get_weather', description='Current weather for a city.', parameters={'properties': {'city': {'type': 'string'}}, 'required': ['city'], 'type': 'object'}, function=<function get_weather at 0x7faae58a9d00>, outputs_to_string=None, inputs_from_state=None, outputs_to_state=None, async_function=None)\"]}" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/3b785633bdbe4d87ae12179feda7f093-output> a provai:Message ;
+    rdfs:label "model output" ;
+    prov:value "{\"replies\": [\"ChatMessage(_role=<ChatRole.ASSISTANT: 'assistant'>, _content=[ToolCall(tool_name='get_weather', arguments={'city': 'Lisbon'}, id='chatcmpl-tool-88bd7c95f8137f43', extra=None)], _name=None, _meta={'model': 'google/gemma-4-26b-a4b-it', 'index': 0, 'finish_reason': 'tool_calls', 'usage': {'completion_tokens': 20, 'prompt_tokens': 149, 'total_tokens': 169, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': 0, 'reasoning_tokens': 2, 'rejected_prediction_tokens': None, 'text_tokens': None, 'image_tokens': 0}, 'prompt_tokens_details': {'audio_tokens': 0, 'cache_write_tokens': 0, 'cached_tokens': 96, 'image_tokens': None, 'text_tokens': None, 'video_tokens': 0}, 'cost': 1.557e-05, 'is_byok': False, 'cost_details': {'upstream_inference_cost': 1.557e-05, 'upstream_inference_prompt_cost': 9.57e-06, 'upstream_inference_completions_cost': 6e-06}}})\"]}" ;
+    prov:wasGeneratedBy <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/3b785633bdbe4d87ae12179feda7f093> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/3f80d8beb7444def8df7acfd345fcc83-arguments> a prov:Entity ;
+    rdfs:label "get_weather arguments" ;
+    prov:value "{\"city\": \"Lisbon\"}" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/50ea3cce112a4fa2a1886a591161240b-output> a prov:Entity ;
+    rdfs:label "evaluator output" ;
+    prov:value "{\"outcome\": \"fail\", \"revise\": [{\"role\": \"user\", \"meta\": {}, \"name\": null, \"content\": [{\"text\": \"The draft failed review: the first draft is always sent back for revision. Revise it, calling read_note for Lisbon first:\\nLisbon is the capital of Portugal and is situated along the Tagus estuary. The city is currently enjoying a clear sky with a pleasant temperature of 21\\u00b0C.\"}]}], \"brief\": [{\"role\": \"user\", \"meta\": {}, \"name\": null, \"content\": [{\"text\": \"Send this brief to client with send_brief:\\nLisbon is the capital of Portugal and is situated along the Tagus estuary. The city is currently enjoying a clear sky with a pleasant temperature of 21\\u00b0C.\"}]}]}" ;
+    prov:wasGeneratedBy <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/50ea3cce112a4fa2a1886a591161240b> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/539774a5fb0c4d029f6f308943b7b11d-output> a prov:Entity ;
+    rdfs:label "evaluator output" ;
+    prov:value "{\"outcome\": \"pass\", \"revise\": [{\"role\": \"user\", \"meta\": {}, \"name\": null, \"content\": [{\"text\": \"The draft failed review: PASS. Revise it, calling read_note for Lisbon first:\\nLisbon is the capital of Portugal and is situated along the Tagus estuary. The city is currently enjoying a clear sky with a pleasant temperature of 21\\u00b0C.\"}]}], \"brief\": [{\"role\": \"user\", \"meta\": {}, \"name\": null, \"content\": [{\"text\": \"Send this brief to client with send_brief:\\nLisbon is the capital of Portugal and is situated along the Tagus estuary. The city is currently enjoying a clear sky with a pleasant temperature of 21\\u00b0C.\"}]}]}" ;
+    prov:wasGeneratedBy <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/539774a5fb0c4d029f6f308943b7b11d> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/5524c28260ad44d79d48531c81517c02-arguments> a prov:Entity ;
+    rdfs:label "read_note arguments" ;
+    prov:value "{\"city\": \"Lisbon\"}" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/5524c28260ad44d79d48531c81517c02-result> a prov:Entity ;
+    rdfs:label "read_note result" ;
+    prov:qualifiedDerivation <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/5524c28260ad44d79d48531c81517c02-result/derivation/notes%2FLisbon%2F1> ;
+    prov:value "Lisbon is the capital of Portugal and lies on the Tagus estuary." ;
+    prov:wasDerivedFrom <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/notes%2FLisbon%2F1> ;
+    prov:wasGeneratedBy <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/5524c28260ad44d79d48531c81517c02> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/5524c28260ad44d79d48531c81517c02-result/derivation/notes%2FLisbon%2F1> a prov:Derivation ;
+    prov:entity <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/notes%2FLisbon%2F1> ;
+    provai:knownBy "inferred" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/6008254371c34181a9ccf7db162448a7-arguments> a prov:Entity ;
+    rdfs:label "get_weather arguments" ;
+    prov:value "{\"city\": \"Lisbon\"}" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/6008254371c34181a9ccf7db162448a7-result> a prov:Entity ;
+    rdfs:label "get_weather result" ;
+    prov:value "Lisbon: 21 C, clear sky" ;
+    prov:wasGeneratedBy <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/6008254371c34181a9ccf7db162448a7> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/69b2d2c038904b1cbfa30f0e477bc4b4-output> a prov:Entity ;
+    rdfs:label "writer output" ;
+    prov:qualifiedDerivation <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/69b2d2c038904b1cbfa30f0e477bc4b4-output/derivation/eb00de25dbf2471484e44ce50c09ee5f-output> ;
+    prov:value "{\"messages\": [{\"role\": \"system\", \"meta\": {}, \"name\": null, \"content\": [{\"text\": \"You write two-sentence briefs about a city. Always call read_note for the city first. Reply with the brief only.\"}]}, {\"role\": \"user\", \"meta\": {}, \"name\": null, \"content\": [{\"text\": \"Write a two-sentence brief on Lisbon. Weather: The current weather in Lisbon is 21\\u00b0C with a clear sky.. Facts: Lisbon is the capital of Portugal and lies on the Tagus estuary.. Call read_note for Lisbon first. Reply with the brief only.\"}]}, {\"role\": \"assistant\", \"meta\": {\"model\": \"google/gemma-4-26b-a4b-it\", \"index\": 0, \"finish_reason\": \"tool_calls\", \"usage\": {\"completion_tokens\": 16, \"prompt_tokens\": 147, \"total_tokens\": 163, \"completion_tokens_details\": {\"accepted_prediction_tokens\": null, \"audio_tokens\": 0, \"reasoning_tokens\": 0, \"rejected_prediction_tokens\": null, \"text_tokens\": null, \"image_tokens\": 0}, \"prompt_tokens_details\": {\"audio_tokens\": 0, \"cache_write_tokens\": 0, \"cached_tokens\": 0, \"image_tokens\": null, \"text_tokens\": null, \"video_tokens\": 0}, \"cost\": 1.803e-05, \"is_byok\": false, \"cost_details\": {\"upstream_inference_cost\": 1.803e-05, \"upstream_inference_prompt_cost\": 1.323e-05, \"upstream_inference_completions_cost\": 4.8e-06}}}, \"name\": null, \"content\": [{\"tool_call\": {\"tool_name\": \"read_note\", \"arguments\": {\"city\": \"Lisbon\"}, \"id\": \"chatcmpl-tool-9dfb22a4c3208fec\", \"extra\": null}}]}, {\"role\": \"tool\", \"meta\": {}, \"name\": null, \"content\": [{\"tool_call_result\": {\"result\": \"Lisbon is the capital of Portugal and lies on the Tagus estuary.\", \"origin\": {\"tool_name\": \"read_note\", \"arguments\": {\"city\": \"Lisbon\"}, \"id\": \"chatcmpl-tool-9dfb22a4c3208fec\", \"extra\": null}, \"error\": false}}]}, {\"role\": \"assistant\", \"meta\": {\"model\": \"google/gemma-4-26b-a4b-it\", \"index\": 0, \"finish_reason\": \"stop\", \"usage\": {\"completion_tokens\": 40, \"prompt_tokens\": 190, \"total_tokens\": 230, \"completion_tokens_details\": {\"accepted_prediction_tokens\": null, \"audio_tokens\": 0, \"reasoning_tokens\": 2, \"rejected_prediction_tokens\": null, \"text_tokens\": null, \"image_tokens\": 0}, \"prompt_tokens_details\": {\"audio_tokens\": 0, \"cache_write_tokens\": 0, \"cached_tokens\": 0, \"image_tokens\": null, \"text_tokens\": null, \"video_tokens\": 0}, \"cost\": 2.91e-05, \"is_byok\": false, \"cost_details\": {\"upstream_inference_cost\": 2.91e-05, \"upstream_inference_prompt_cost\": 1.71e-05, \"upstream_inference_completions_cost\": 1.2e-05}}}, \"name\": null, \"content\": [{\"text\": \"Lisbon is the capital of Portugal and is situated along the Tagus estuary. The city is currently enjoying a clear sky with a pleasant temperature of 21\\u00b0C.\"}]}], \"step_count\": 2, \"token_usage\": {\"completion_tokens\": 56, \"prompt_tokens\": 337, \"total_tokens\": 393, \"completion_tokens_details\": {\"accepted_prediction_tokens\": null, \"audio_tokens\": 0, \"reasoning_tokens\": 2, \"rejected_prediction_tokens\": null, \"text_tokens\": null, \"image_tokens\": 0}, \"prompt_tokens_details\": {\"audio_tokens\": 0, \"cache_write_tokens\": 0, \"cached_tokens\": 0, \"image_tokens\": null, \"text_tokens\": null, \"video_tokens\": 0}, \"cost\": 4.713e-05, \"is_byok\": 0, \"cost_details\": {\"upstream_inference_cost\": 4.713e-05, \"upstream_inference_prompt_cost\": 3.033e-05, \"upstream_inference_completions_cost\": 1.6800000000000002e-05}}, \"tool_call_counts\": {\"read_note\": 1}, \"exit_reason\": \"text\", \"last_message\": {\"role\": \"assistant\", \"meta\": {\"model\": \"google/gemma-4-26b-a4b-it\", \"index\": 0, \"finish_reason\": \"stop\", \"usage\": {\"completion_tokens\": 40, \"prompt_tokens\": 190, \"total_tokens\": 230, \"completion_tokens_details\": {\"accepted_prediction_tokens\": null, \"audio_tokens\": 0, \"reasoning_tokens\": 2, \"rejected_prediction_tokens\": null, \"text_tokens\": null, \"image_tokens\": 0}, \"prompt_tokens_details\": {\"audio_tokens\": 0, \"cache_write_tokens\": 0, \"cached_tokens\": 0, \"image_tokens\": null, \"text_tokens\": null, \"video_tokens\": 0}, \"cost\": 2.91e-05, \"is_byok\": false, \"cost_details\": {\"upstream_inference_cost\": 2.91e-05, \"upstream_inference_prompt_cost\": 1.71e-05, \"upstream_inference_completions_cost\": 1.2e-05}}}, \"name\": null, \"content\": [{\"text\": \"Lisbon is the capital of Portugal and is situated along the Tagus estuary. The city is currently enjoying a clear sky with a pleasant temperature of 21\\u00b0C.\"}]}}" ;
+    prov:wasDerivedFrom <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/eb00de25dbf2471484e44ce50c09ee5f-output> ;
+    prov:wasGeneratedBy <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/69b2d2c038904b1cbfa30f0e477bc4b4> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/69b2d2c038904b1cbfa30f0e477bc4b4-output/derivation/eb00de25dbf2471484e44ce50c09ee5f-output> a prov:Derivation ;
+    prov:entity <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/eb00de25dbf2471484e44ce50c09ee5f-output> ;
+    provai:knownBy "inferred" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/6ff209c0bca9405a84903d498e6b2e0a-output> a prov:Entity ;
+    rdfs:label "writer output" ;
+    prov:qualifiedDerivation <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/6ff209c0bca9405a84903d498e6b2e0a-output/derivation/a6d4ec55d4794e7aa74001e5787af8dc-output> ;
+    prov:value "{\"messages\": [{\"role\": \"system\", \"meta\": {}, \"name\": null, \"content\": [{\"text\": \"You write two-sentence briefs about a city. Always call read_note for the city first. Reply with the brief only.\"}]}, {\"role\": \"user\", \"meta\": {}, \"name\": null, \"content\": [{\"text\": \"The draft failed review: the first draft is always sent back for revision. Revise it, calling read_note for Lisbon first:\\nLisbon is the capital of Portugal and is situated along the Tagus estuary. The city is currently enjoying a clear sky with a pleasant temperature of 21\\u00b0C.\"}]}, {\"role\": \"assistant\", \"meta\": {\"model\": \"google/gemma-4-26b-a4b-it\", \"index\": 0, \"finish_reason\": \"tool_calls\", \"usage\": {\"completion_tokens\": 16, \"prompt_tokens\": 153, \"total_tokens\": 169, \"completion_tokens_details\": {\"accepted_prediction_tokens\": null, \"audio_tokens\": 0, \"reasoning_tokens\": 0, \"rejected_prediction_tokens\": null, \"text_tokens\": null, \"image_tokens\": 0}, \"prompt_tokens_details\": {\"audio_tokens\": 0, \"cache_write_tokens\": 0, \"cached_tokens\": 0, \"image_tokens\": null, \"text_tokens\": null, \"video_tokens\": 0}, \"cost\": 1.857e-05, \"is_byok\": false, \"cost_details\": {\"upstream_inference_cost\": 1.857e-05, \"upstream_inference_prompt_cost\": 1.377e-05, \"upstream_inference_completions_cost\": 4.8e-06}}}, \"name\": null, \"content\": [{\"tool_call\": {\"tool_name\": \"read_note\", \"arguments\": {\"city\": \"Lisbon\"}, \"id\": \"chatcmpl-tool-92883ab7b37eaf02\", \"extra\": null}}]}, {\"role\": \"tool\", \"meta\": {}, \"name\": null, \"content\": [{\"tool_call_result\": {\"result\": \"Lisbon is the capital of Portugal and lies on the Tagus estuary.\", \"origin\": {\"tool_name\": \"read_note\", \"arguments\": {\"city\": \"Lisbon\"}, \"id\": \"chatcmpl-tool-92883ab7b37eaf02\", \"extra\": null}, \"error\": false}}]}, {\"role\": \"assistant\", \"meta\": {\"model\": \"google/gemma-4-26b-a4b-it\", \"index\": 0, \"finish_reason\": \"stop\", \"usage\": {\"completion_tokens\": 40, \"prompt_tokens\": 196, \"total_tokens\": 236, \"completion_tokens_details\": {\"accepted_prediction_tokens\": null, \"audio_tokens\": 0, \"reasoning_tokens\": 2, \"rejected_prediction_tokens\": null, \"text_tokens\": null, \"image_tokens\": 0}, \"prompt_tokens_details\": {\"audio_tokens\": 0, \"cache_write_tokens\": 0, \"cached_tokens\": 160, \"image_tokens\": null, \"text_tokens\": null, \"video_tokens\": 0}, \"cost\": 2.324e-05, \"is_byok\": false, \"cost_details\": {\"upstream_inference_cost\": 2.324e-05, \"upstream_inference_prompt_cost\": 1.124e-05, \"upstream_inference_completions_cost\": 1.2e-05}}}, \"name\": null, \"content\": [{\"text\": \"Lisbon is the capital of Portugal and is situated along the Tagus estuary. The city is currently enjoying a clear sky with a pleasant temperature of 21\\u00b0C.\"}]}], \"step_count\": 2, \"token_usage\": {\"completion_tokens\": 56, \"prompt_tokens\": 349, \"total_tokens\": 405, \"completion_tokens_details\": {\"accepted_prediction_tokens\": null, \"audio_tokens\": 0, \"reasoning_tokens\": 2, \"rejected_prediction_tokens\": null, \"text_tokens\": null, \"image_tokens\": 0}, \"prompt_tokens_details\": {\"audio_tokens\": 0, \"cache_write_tokens\": 0, \"cached_tokens\": 160, \"image_tokens\": null, \"text_tokens\": null, \"video_tokens\": 0}, \"cost\": 4.181e-05, \"is_byok\": 0, \"cost_details\": {\"upstream_inference_cost\": 4.181e-05, \"upstream_inference_prompt_cost\": 2.501e-05, \"upstream_inference_completions_cost\": 1.6800000000000002e-05}}, \"tool_call_counts\": {\"read_note\": 1}, \"exit_reason\": \"text\", \"last_message\": {\"role\": \"assistant\", \"meta\": {\"model\": \"google/gemma-4-26b-a4b-it\", \"index\": 0, \"finish_reason\": \"stop\", \"usage\": {\"completion_tokens\": 40, \"prompt_tokens\": 196, \"total_tokens\": 236, \"completion_tokens_details\": {\"accepted_prediction_tokens\": null, \"audio_tokens\": 0, \"reasoning_tokens\": 2, \"rejected_prediction_tokens\": null, \"text_tokens\": null, \"image_tokens\": 0}, \"prompt_tokens_details\": {\"audio_tokens\": 0, \"cache_write_tokens\": 0, \"cached_tokens\": 160, \"image_tokens\": null, \"text_tokens\": null, \"video_tokens\": 0}, \"cost\": 2.324e-05, \"is_byok\": false, \"cost_details\": {\"upstream_inference_cost\": 2.324e-05, \"upstream_inference_prompt_cost\": 1.124e-05, \"upstream_inference_completions_cost\": 1.2e-05}}}, \"name\": null, \"content\": [{\"text\": \"Lisbon is the capital of Portugal and is situated along the Tagus estuary. The city is currently enjoying a clear sky with a pleasant temperature of 21\\u00b0C.\"}]}}" ;
+    prov:wasDerivedFrom <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/a6d4ec55d4794e7aa74001e5787af8dc-output> ;
+    prov:wasGeneratedBy <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/6ff209c0bca9405a84903d498e6b2e0a> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/6ff209c0bca9405a84903d498e6b2e0a-output/derivation/a6d4ec55d4794e7aa74001e5787af8dc-output> a prov:Derivation ;
+    prov:entity <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/a6d4ec55d4794e7aa74001e5787af8dc-output> ;
+    provai:knownBy "inferred" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/796010eb565444f2bd07e82e1e686d6e-input> a provai:Message ;
+    rdfs:label "model input" ;
+    prov:value "{\"messages\": [\"ChatMessage(_role=<ChatRole.SYSTEM: 'system'>, _content=[TextContent(text='You do not know facts about cities. Always call search_facts first. Answer in one sentence after calling your tool.')], _name=None, _meta={})\", \"ChatMessage(_role=<ChatRole.USER: 'user'>, _content=[TextContent(text='Facts about Lisbon?')], _name=None, _meta={})\"], \"tools\": [\"Tool(name='search_facts', description='Facts about a city from the document store.', parameters={'properties': {'city': {'type': 'string'}}, 'required': ['city'], 'type': 'object'}, function=<function search_facts at 0x7faae58a9da0>, outputs_to_string=None, inputs_from_state=None, outputs_to_state=None, async_function=None)\"]}" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/796010eb565444f2bd07e82e1e686d6e-output> a provai:Message ;
+    rdfs:label "model output" ;
+    prov:value "{\"replies\": [\"ChatMessage(_role=<ChatRole.ASSISTANT: 'assistant'>, _content=[ToolCall(tool_name='search_facts', arguments={'city': 'Lisbon'}, id='chatcmpl-tool-ac627c8565d0ad3a', extra=None)], _name=None, _meta={'model': 'google/gemma-4-26b-a4b-it', 'index': 0, 'finish_reason': 'tool_calls', 'usage': {'completion_tokens': 16, 'prompt_tokens': 93, 'total_tokens': 109, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': None, 'text_tokens': None, 'image_tokens': 0}, 'prompt_tokens_details': {'audio_tokens': 0, 'cache_write_tokens': 0, 'cached_tokens': 0, 'image_tokens': None, 'text_tokens': None, 'video_tokens': 0}, 'cost': 1.317e-05, 'is_byok': False, 'cost_details': {'upstream_inference_cost': 1.317e-05, 'upstream_inference_prompt_cost': 8.37e-06, 'upstream_inference_completions_cost': 4.8e-06}}})\"]}" ;
+    prov:wasGeneratedBy <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/796010eb565444f2bd07e82e1e686d6e> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/79c793ef611b4356a35f3835151fafe3-input> a provai:Message ;
+    rdfs:label "model input" ;
+    prov:value "{\"messages\": [\"ChatMessage(_role=<ChatRole.SYSTEM: 'system'>, _content=[TextContent(text='You do not know the weather. Always call get_weather first, even if an earlier attempt failed. Answer in one sentence after calling your tool.')], _name=None, _meta={})\", \"ChatMessage(_role=<ChatRole.USER: 'user'>, _content=[TextContent(text='Weather in Lisbon?')], _name=None, _meta={})\"], \"tools\": [\"Tool(name='get_weather', description='Current weather for a city.', parameters={'properties': {'city': {'type': 'string'}}, 'required': ['city'], 'type': 'object'}, function=<function get_weather at 0x7faae58a9d00>, outputs_to_string=None, inputs_from_state=None, outputs_to_state=None, async_function=None)\"]}" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/79c793ef611b4356a35f3835151fafe3-output> a provai:Message ;
+    rdfs:label "model output" ;
+    prov:value "{\"replies\": [\"ChatMessage(_role=<ChatRole.ASSISTANT: 'assistant'>, _content=[ToolCall(tool_name='get_weather', arguments={'city': 'Lisbon'}, id='chatcmpl-tool-8889b5e4925b9f62', extra=None)], _name=None, _meta={'model': 'google/gemma-4-26b-a4b-it', 'index': 0, 'finish_reason': 'tool_calls', 'usage': {'completion_tokens': 16, 'prompt_tokens': 96, 'total_tokens': 112, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': None, 'text_tokens': None, 'image_tokens': 0}, 'prompt_tokens_details': {'audio_tokens': 0, 'cache_write_tokens': 0, 'cached_tokens': 0, 'image_tokens': None, 'text_tokens': None, 'video_tokens': 0}, 'cost': 1.344e-05, 'is_byok': False, 'cost_details': {'upstream_inference_cost': 1.344e-05, 'upstream_inference_prompt_cost': 8.64e-06, 'upstream_inference_completions_cost': 4.8e-06}}})\"]}" ;
+    prov:wasGeneratedBy <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/79c793ef611b4356a35f3835151fafe3> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/7c034877782e47f5906404b90292cb04-output> a prov:Entity ;
+    rdfs:label "facts_agent output" ;
+    prov:qualifiedDerivation <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/7c034877782e47f5906404b90292cb04-output/derivation/38bac4dbf9d3467a8ca1ad7d2d2e1a12-output> ;
+    prov:value "{\"messages\": [{\"role\": \"system\", \"meta\": {}, \"name\": null, \"content\": [{\"text\": \"You do not know facts about cities. Always call search_facts first. Answer in one sentence after calling your tool.\"}]}, {\"role\": \"user\", \"meta\": {}, \"name\": null, \"content\": [{\"text\": \"Facts about Lisbon?\"}]}, {\"role\": \"assistant\", \"meta\": {\"model\": \"google/gemma-4-26b-a4b-it\", \"index\": 0, \"finish_reason\": \"tool_calls\", \"usage\": {\"completion_tokens\": 16, \"prompt_tokens\": 93, \"total_tokens\": 109, \"completion_tokens_details\": {\"accepted_prediction_tokens\": null, \"audio_tokens\": 0, \"reasoning_tokens\": 0, \"rejected_prediction_tokens\": null, \"text_tokens\": null, \"image_tokens\": 0}, \"prompt_tokens_details\": {\"audio_tokens\": 0, \"cache_write_tokens\": 0, \"cached_tokens\": 0, \"image_tokens\": null, \"text_tokens\": null, \"video_tokens\": 0}, \"cost\": 1.317e-05, \"is_byok\": false, \"cost_details\": {\"upstream_inference_cost\": 1.317e-05, \"upstream_inference_prompt_cost\": 8.37e-06, \"upstream_inference_completions_cost\": 4.8e-06}}}, \"name\": null, \"content\": [{\"tool_call\": {\"tool_name\": \"search_facts\", \"arguments\": {\"city\": \"Lisbon\"}, \"id\": \"chatcmpl-tool-ac627c8565d0ad3a\", \"extra\": null}}]}, {\"role\": \"tool\", \"meta\": {}, \"name\": null, \"content\": [{\"tool_call_result\": {\"result\": \"Lisbon is the capital of Portugal and lies on the Tagus estuary.\", \"origin\": {\"tool_name\": \"search_facts\", \"arguments\": {\"city\": \"Lisbon\"}, \"id\": \"chatcmpl-tool-ac627c8565d0ad3a\", \"extra\": null}, \"error\": false}}]}, {\"role\": \"assistant\", \"meta\": {\"model\": \"google/gemma-4-26b-a4b-it\", \"index\": 0, \"finish_reason\": \"stop\", \"usage\": {\"completion_tokens\": 20, \"prompt_tokens\": 136, \"total_tokens\": 156, \"completion_tokens_details\": {\"accepted_prediction_tokens\": null, \"audio_tokens\": 0, \"reasoning_tokens\": 2, \"rejected_prediction_tokens\": null, \"text_tokens\": null, \"image_tokens\": 0}, \"prompt_tokens_details\": {\"audio_tokens\": 0, \"cache_write_tokens\": 0, \"cached_tokens\": 96, \"image_tokens\": null, \"text_tokens\": null, \"video_tokens\": 0}, \"cost\": 1.44e-05, \"is_byok\": false, \"cost_details\": {\"upstream_inference_cost\": 1.44e-05, \"upstream_inference_prompt_cost\": 8.4e-06, \"upstream_inference_completions_cost\": 6e-06}}}, \"name\": null, \"content\": [{\"text\": \"Lisbon is the capital of Portugal and lies on the Tagus estuary.\"}]}], \"step_count\": 2, \"token_usage\": {\"completion_tokens\": 36, \"prompt_tokens\": 229, \"total_tokens\": 265, \"completion_tokens_details\": {\"accepted_prediction_tokens\": null, \"audio_tokens\": 0, \"reasoning_tokens\": 2, \"rejected_prediction_tokens\": null, \"text_tokens\": null, \"image_tokens\": 0}, \"prompt_tokens_details\": {\"audio_tokens\": 0, \"cache_write_tokens\": 0, \"cached_tokens\": 96, \"image_tokens\": null, \"text_tokens\": null, \"video_tokens\": 0}, \"cost\": 2.757e-05, \"is_byok\": 0, \"cost_details\": {\"upstream_inference_cost\": 2.757e-05, \"upstream_inference_prompt_cost\": 1.6769999999999997e-05, \"upstream_inference_completions_cost\": 1.08e-05}}, \"tool_call_counts\": {\"search_facts\": 1}, \"exit_reason\": \"text\", \"last_message\": {\"role\": \"assistant\", \"meta\": {\"model\": \"google/gemma-4-26b-a4b-it\", \"index\": 0, \"finish_reason\": \"stop\", \"usage\": {\"completion_tokens\": 20, \"prompt_tokens\": 136, \"total_tokens\": 156, \"completion_tokens_details\": {\"accepted_prediction_tokens\": null, \"audio_tokens\": 0, \"reasoning_tokens\": 2, \"rejected_prediction_tokens\": null, \"text_tokens\": null, \"image_tokens\": 0}, \"prompt_tokens_details\": {\"audio_tokens\": 0, \"cache_write_tokens\": 0, \"cached_tokens\": 96, \"image_tokens\": null, \"text_tokens\": null, \"video_tokens\": 0}, \"cost\": 1.44e-05, \"is_byok\": false, \"cost_details\": {\"upstream_inference_cost\": 1.44e-05, \"upstream_inference_prompt_cost\": 8.4e-06, \"upstream_inference_completions_cost\": 6e-06}}}, \"name\": null, \"content\": [{\"text\": \"Lisbon is the capital of Portugal and lies on the Tagus estuary.\"}]}}" ;
+    prov:wasDerivedFrom <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/38bac4dbf9d3467a8ca1ad7d2d2e1a12-output> ;
+    prov:wasGeneratedBy <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/7c034877782e47f5906404b90292cb04> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/7c034877782e47f5906404b90292cb04-output/derivation/38bac4dbf9d3467a8ca1ad7d2d2e1a12-output> a prov:Derivation ;
+    prov:entity <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/38bac4dbf9d3467a8ca1ad7d2d2e1a12-output> ;
+    provai:knownBy "inferred" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/88ce3d2e936c4efa8851db7e19be4720-arguments> a prov:Entity ;
+    rdfs:label "read_note arguments" ;
+    prov:value "{\"city\": \"Lisbon\"}" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/88ce3d2e936c4efa8851db7e19be4720-result> a prov:Entity ;
+    rdfs:label "read_note result" ;
+    prov:qualifiedDerivation <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/88ce3d2e936c4efa8851db7e19be4720-result/derivation/notes%2FLisbon%2F1> ;
+    prov:value "Lisbon is the capital of Portugal and lies on the Tagus estuary." ;
+    prov:wasDerivedFrom <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/notes%2FLisbon%2F1> ;
+    prov:wasGeneratedBy <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/88ce3d2e936c4efa8851db7e19be4720> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/88ce3d2e936c4efa8851db7e19be4720-result/derivation/notes%2FLisbon%2F1> a prov:Derivation ;
+    prov:entity <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/notes%2FLisbon%2F1> ;
+    provai:knownBy "inferred" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/97090fc7f473423b860d293e2d3a97fa-input> a provai:Message ;
+    rdfs:label "model input" ;
+    prov:value "{\"messages\": [\"ChatMessage(_role=<ChatRole.SYSTEM: 'system'>, _content=[TextContent(text='You send briefs. Call send_brief exactly once, with the brief you are given and to=client.')], _name=None, _meta={})\", \"ChatMessage(_role=<ChatRole.USER: 'user'>, _content=[TextContent(text='Send this brief to client with send_brief:\\\\nLisbon is the capital of Portugal and is situated along the Tagus estuary. The city is currently enjoying a clear sky with a pleasant temperature of 21°C.')], _name=None, _meta={})\"], \"tools\": [\"Tool(name='send_brief', description='Send the brief to a recipient.', parameters={'properties': {'text': {'type': 'string'}, 'to': {'type': 'string'}}, 'required': ['text', 'to'], 'type': 'object'}, function=<function build.<locals>.send_brief at 0x7faae58d5620>, outputs_to_string=None, inputs_from_state=None, outputs_to_state=None, async_function=None)\"]}" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/97090fc7f473423b860d293e2d3a97fa-output> a provai:Message ;
+    rdfs:label "model output" ;
+    prov:value "{\"replies\": [\"ChatMessage(_role=<ChatRole.ASSISTANT: 'assistant'>, _content=[ToolCall(tool_name='send_brief', arguments={'text': 'Lisbon is the capital of Portugal and is situated along the Tagus estuary. The city is currently enjoying a clear sky with a pleasant temperature of 21°C.', 'to': 'client'}, id='chatcmpl-tool-80b8a32e35d05b81', extra=None)], _name=None, _meta={'model': 'google/gemma-4-26b-a4b-it', 'index': 0, 'finish_reason': 'tool_calls', 'usage': {'completion_tokens': 55, 'prompt_tokens': 143, 'total_tokens': 198, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': None, 'text_tokens': None, 'image_tokens': 0}, 'prompt_tokens_details': {'audio_tokens': 0, 'cache_write_tokens': 0, 'cached_tokens': 0, 'image_tokens': None, 'text_tokens': None, 'video_tokens': 0}, 'cost': 2.937e-05, 'is_byok': False, 'cost_details': {'upstream_inference_cost': 2.937e-05, 'upstream_inference_prompt_cost': 1.287e-05, 'upstream_inference_completions_cost': 1.65e-05}}})\"]}" ;
+    prov:wasGeneratedBy <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/97090fc7f473423b860d293e2d3a97fa> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/a6d4ec55d4794e7aa74001e5787af8dc-input> a provai:Message ;
+    rdfs:label "model input" ;
+    prov:value "{\"messages\": [\"ChatMessage(_role=<ChatRole.SYSTEM: 'system'>, _content=[TextContent(text='You write two-sentence briefs about a city. Always call read_note for the city first. Reply with the brief only.')], _name=None, _meta={})\", \"ChatMessage(_role=<ChatRole.USER: 'user'>, _content=[TextContent(text='The draft failed review: the first draft is always sent back for revision. Revise it, calling read_note for Lisbon first:\\\\nLisbon is the capital of Portugal and is situated along the Tagus estuary. The city is currently enjoying a clear sky with a pleasant temperature of 21°C.')], _name=None, _meta={})\", \"ChatMessage(_role=<ChatRole.ASSISTANT: 'assistant'>, _content=[ToolCall(tool_name='read_note', arguments={'city': 'Lisbon'}, id='chatcmpl-tool-92883ab7b37eaf02', extra=None)], _name=None, _meta={'model': 'google/gemma-4-26b-a4b-it', 'index': 0, 'finish_reason': 'tool_calls', 'usage': {'completion_tokens': 16, 'prompt_tokens': 153, 'total_tokens': 169, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': None, 'text_tokens': None, 'image_tokens': 0}, 'prompt_tokens_details': {'audio_tokens': 0, 'cache_write_tokens': 0, 'cached_tokens': 0, 'image_tokens': None, 'text_tokens': None, 'video_tokens': 0}, 'cost': 1.857e-05, 'is_byok': False, 'cost_details': {'upstream_inference_cost': 1.857e-05, 'upstream_inference_prompt_cost': 1.377e-05, 'upstream_inference_completions_cost': 4.8e-06}}})\", \"ChatMessage(_role=<ChatRole.TOOL: 'tool'>, _content=[ToolCallResult(result='Lisbon is the capital of Portugal and lies on the Tagus estuary.', origin=ToolCall(tool_name='read_note', arguments={'city': 'Lisbon'}, id='chatcmpl-tool-92883ab7b37eaf02', extra=None), error=False)], _name=None, _meta={})\"], \"tools\": [\"Tool(name='read_note', description='Read the shared note about a city.', parameters={'properties': {'city': {'type': 'string'}}, 'required': ['city'], 'type': 'object'}, function=<function read_note at 0x7faae58a9ee0>, outputs_to_string=None, inputs_from_state=None, outputs_to_state=None, async_function=None)\"]}" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/b021557826f14bbb821e690211372d82-arguments> a prov:Entity ;
+    rdfs:label "search_facts arguments" ;
+    prov:value "{\"city\": \"Lisbon\"}" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/b021557826f14bbb821e690211372d82-result> a prov:Entity ;
+    rdfs:label "search_facts result" ;
+    prov:value "Lisbon is the capital of Portugal and lies on the Tagus estuary." ;
+    prov:wasGeneratedBy <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/b021557826f14bbb821e690211372d82> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/b42417a62af14e2f9e0367d92fbfef14-output> a prov:Entity ;
+    rdfs:label "draft_input output" ;
+    prov:value "{\"value\": [{\"role\": \"user\", \"meta\": {}, \"name\": null, \"content\": [{\"text\": \"The draft failed review: the first draft is always sent back for revision. Revise it, calling read_note for Lisbon first:\\nLisbon is the capital of Portugal and is situated along the Tagus estuary. The city is currently enjoying a clear sky with a pleasant temperature of 21\\u00b0C.\"}]}]}" ;
+    prov:wasGeneratedBy <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/b42417a62af14e2f9e0367d92fbfef14> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/c8565fc54a7044cb9c8c29415f585ed8-output> a prov:Entity ;
+    rdfs:label "review output" ;
+    prov:value "{\"release\": [{\"role\": \"user\", \"meta\": {}, \"name\": null, \"content\": [{\"text\": \"Send this brief to client with send_brief:\\nLisbon is the capital of Portugal and is situated along the Tagus estuary. The city is currently enjoying a clear sky with a pleasant temperature of 21\\u00b0C.\"}]}]}" ;
+    prov:wasGeneratedBy <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/c8565fc54a7044cb9c8c29415f585ed8> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/d6087a2c3c054443a74f83add770868b-input> a provai:Message ;
+    rdfs:label "model input" ;
+    prov:value "{\"messages\": [\"ChatMessage(_role=<ChatRole.SYSTEM: 'system'>, _content=[TextContent(text='You write two-sentence briefs about a city. Always call read_note for the city first. Reply with the brief only.')], _name=None, _meta={})\", \"ChatMessage(_role=<ChatRole.USER: 'user'>, _content=[TextContent(text='Write a two-sentence brief on Lisbon. Weather: The current weather in Lisbon is 21°C with a clear sky.. Facts: Lisbon is the capital of Portugal and lies on the Tagus estuary.. Call read_note for Lisbon first. Reply with the brief only.')], _name=None, _meta={})\"], \"tools\": [\"Tool(name='read_note', description='Read the shared note about a city.', parameters={'properties': {'city': {'type': 'string'}}, 'required': ['city'], 'type': 'object'}, function=<function read_note at 0x7faae58a9ee0>, outputs_to_string=None, inputs_from_state=None, outputs_to_state=None, async_function=None)\"]}" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/d6087a2c3c054443a74f83add770868b-output> a provai:Message ;
+    rdfs:label "model output" ;
+    prov:value "{\"replies\": [\"ChatMessage(_role=<ChatRole.ASSISTANT: 'assistant'>, _content=[ToolCall(tool_name='read_note', arguments={'city': 'Lisbon'}, id='chatcmpl-tool-9dfb22a4c3208fec', extra=None)], _name=None, _meta={'model': 'google/gemma-4-26b-a4b-it', 'index': 0, 'finish_reason': 'tool_calls', 'usage': {'completion_tokens': 16, 'prompt_tokens': 147, 'total_tokens': 163, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': None, 'text_tokens': None, 'image_tokens': 0}, 'prompt_tokens_details': {'audio_tokens': 0, 'cache_write_tokens': 0, 'cached_tokens': 0, 'image_tokens': None, 'text_tokens': None, 'video_tokens': 0}, 'cost': 1.803e-05, 'is_byok': False, 'cost_details': {'upstream_inference_cost': 1.803e-05, 'upstream_inference_prompt_cost': 1.323e-05, 'upstream_inference_completions_cost': 4.8e-06}}})\"]}" ;
+    prov:wasGeneratedBy <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/d6087a2c3c054443a74f83add770868b> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/e7110f04627d4ced979ec66812ce8700-input> a provai:Message ;
+    rdfs:label "model input" ;
+    prov:value "{\"messages\": [\"ChatMessage(_role=<ChatRole.SYSTEM: 'system'>, _content=[TextContent(text='You do not know the weather. Always call get_weather first, even if an earlier attempt failed. Answer in one sentence after calling your tool.')], _name=None, _meta={})\", \"ChatMessage(_role=<ChatRole.USER: 'user'>, _content=[TextContent(text='Weather in Lisbon?')], _name=None, _meta={})\", \"ChatMessage(_role=<ChatRole.ASSISTANT: 'assistant'>, _content=[ToolCall(tool_name='get_weather', arguments={'city': 'Lisbon'}, id='chatcmpl-tool-8889b5e4925b9f62', extra=None)], _name=None, _meta={'model': 'google/gemma-4-26b-a4b-it', 'index': 0, 'finish_reason': 'tool_calls', 'usage': {'completion_tokens': 16, 'prompt_tokens': 96, 'total_tokens': 112, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': None, 'text_tokens': None, 'image_tokens': 0}, 'prompt_tokens_details': {'audio_tokens': 0, 'cache_write_tokens': 0, 'cached_tokens': 0, 'image_tokens': None, 'text_tokens': None, 'video_tokens': 0}, 'cost': 1.344e-05, 'is_byok': False, 'cost_details': {'upstream_inference_cost': 1.344e-05, 'upstream_inference_prompt_cost': 8.64e-06, 'upstream_inference_completions_cost': 4.8e-06}}})\", \"ChatMessage(_role=<ChatRole.TOOL: 'tool'>, _content=[ToolCallResult(result=\\\"Failed to invoke Tool `get_weather` with parameters {'city': 'Lisbon'}. Error: weather service timed out\\\", origin=ToolCall(tool_name='get_weather', arguments={'city': 'Lisbon'}, id='chatcmpl-tool-8889b5e4925b9f62', extra=None), error=True)], _name=None, _meta={})\", \"ChatMessage(_role=<ChatRole.ASSISTANT: 'assistant'>, _content=[ToolCall(tool_name='get_weather', arguments={'city': 'Lisbon'}, id='chatcmpl-tool-88bd7c95f8137f43', extra=None)], _name=None, _meta={'model': 'google/gemma-4-26b-a4b-it', 'index': 0, 'finish_reason': 'tool_calls', 'usage': {'completion_tokens': 20, 'prompt_tokens': 149, 'total_tokens': 169, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': 0, 'reasoning_tokens': 2, 'rejected_prediction_tokens': None, 'text_tokens': None, 'image_tokens': 0}, 'prompt_tokens_details': {'audio_tokens': 0, 'cache_write_tokens': 0, 'cached_tokens': 96, 'image_tokens': None, 'text_tokens': None, 'video_tokens': 0}, 'cost': 1.557e-05, 'is_byok': False, 'cost_details': {'upstream_inference_cost': 1.557e-05, 'upstream_inference_prompt_cost': 9.57e-06, 'upstream_inference_completions_cost': 6e-06}}})\", \"ChatMessage(_role=<ChatRole.TOOL: 'tool'>, _content=[ToolCallResult(result='Lisbon: 21 C, clear sky', origin=ToolCall(tool_name='get_weather', arguments={'city': 'Lisbon'}, id='chatcmpl-tool-88bd7c95f8137f43', extra=None), error=False)], _name=None, _meta={})\"], \"tools\": [\"Tool(name='get_weather', description='Current weather for a city.', parameters={'properties': {'city': {'type': 'string'}}, 'required': ['city'], 'type': 'object'}, function=<function get_weather at 0x7faae58a9d00>, outputs_to_string=None, inputs_from_state=None, outputs_to_state=None, async_function=None)\"]}" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/e9e451f2463143ec898936901a323623-output> a prov:Entity ;
+    rdfs:label "draft_input output" ;
+    prov:value "{\"value\": [{\"role\": \"user\", \"meta\": {}, \"name\": null, \"content\": [{\"text\": \"Write a two-sentence brief on Lisbon. Weather: The current weather in Lisbon is 21\\u00b0C with a clear sky.. Facts: Lisbon is the capital of Portugal and lies on the Tagus estuary.. Call read_note for Lisbon first. Reply with the brief only.\"}]}]}" ;
+    prov:wasGeneratedBy <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/e9e451f2463143ec898936901a323623> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/eb00de25dbf2471484e44ce50c09ee5f-input> a provai:Message ;
+    rdfs:label "model input" ;
+    prov:value "{\"messages\": [\"ChatMessage(_role=<ChatRole.SYSTEM: 'system'>, _content=[TextContent(text='You write two-sentence briefs about a city. Always call read_note for the city first. Reply with the brief only.')], _name=None, _meta={})\", \"ChatMessage(_role=<ChatRole.USER: 'user'>, _content=[TextContent(text='Write a two-sentence brief on Lisbon. Weather: The current weather in Lisbon is 21°C with a clear sky.. Facts: Lisbon is the capital of Portugal and lies on the Tagus estuary.. Call read_note for Lisbon first. Reply with the brief only.')], _name=None, _meta={})\", \"ChatMessage(_role=<ChatRole.ASSISTANT: 'assistant'>, _content=[ToolCall(tool_name='read_note', arguments={'city': 'Lisbon'}, id='chatcmpl-tool-9dfb22a4c3208fec', extra=None)], _name=None, _meta={'model': 'google/gemma-4-26b-a4b-it', 'index': 0, 'finish_reason': 'tool_calls', 'usage': {'completion_tokens': 16, 'prompt_tokens': 147, 'total_tokens': 163, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': None, 'text_tokens': None, 'image_tokens': 0}, 'prompt_tokens_details': {'audio_tokens': 0, 'cache_write_tokens': 0, 'cached_tokens': 0, 'image_tokens': None, 'text_tokens': None, 'video_tokens': 0}, 'cost': 1.803e-05, 'is_byok': False, 'cost_details': {'upstream_inference_cost': 1.803e-05, 'upstream_inference_prompt_cost': 1.323e-05, 'upstream_inference_completions_cost': 4.8e-06}}})\", \"ChatMessage(_role=<ChatRole.TOOL: 'tool'>, _content=[ToolCallResult(result='Lisbon is the capital of Portugal and lies on the Tagus estuary.', origin=ToolCall(tool_name='read_note', arguments={'city': 'Lisbon'}, id='chatcmpl-tool-9dfb22a4c3208fec', extra=None), error=False)], _name=None, _meta={})\"], \"tools\": [\"Tool(name='read_note', description='Read the shared note about a city.', parameters={'properties': {'city': {'type': 'string'}}, 'required': ['city'], 'type': 'object'}, function=<function read_note at 0x7faae58a9ee0>, outputs_to_string=None, inputs_from_state=None, outputs_to_state=None, async_function=None)\"]}" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/notes%2FLisbon%2F1/derivation/38bac4dbf9d3467a8ca1ad7d2d2e1a12-output> a prov:Derivation ;
+    prov:entity <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/38bac4dbf9d3467a8ca1ad7d2d2e1a12-output> ;
+    provai:knownBy "inferred" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/run> a provai:Run ;
+    prov:wasAssociatedWith <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/user> ;
+    provai:contentCaptured true ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/session/hs-20261002T155430> ;
+    provai:source "haystack 3.3.0 with openinference-instrumentation-haystack 0.1.44" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/session/hs-20261002T155430> a provai:Session ;
+    rdfs:label "hs-20261002T155430" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/053948fe97c94457a0fa4c31c40e28c6> a provai:Check ;
+    rdfs:label "approval" ;
+    prov:endedAtTime "2026-10-02T15:54:53.477785+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:53.477634+00:00"^^xsd:dateTime ;
+    prov:wasAssociatedWith <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/approver> ;
+    provai:checked <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/92261cdafcfe41d7b529ec17c3b8c5b0-arguments> ;
+    provai:outcome "approve" ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/7d5265202b1d46619a8fc15100533cef> ;
+    provai:status "completed" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/0x60444f9b3c34d292> a provai:ModelCall ;
+    rdfs:label "chat" ;
+    prov:endedAtTime "2026-10-02T15:54:50.966884+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:49.875840+00:00"^^xsd:dateTime ;
+    prov:used <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/0x60444f9b3c34d292-input> ;
+    prov:wasAssociatedWith <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/evaluator> ;
+    provai:inputTokens 61 ;
+    provai:maxTokens 1000 ;
+    provai:outputTokens 2 ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/539774a5fb0c4d029f6f308943b7b11d> ;
+    provai:status "completed" ;
+    provai:temperature 0.2 ;
+    provai:usedModel <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/model/openai%2Fgoogle%2Fgemma-4-26b-a4b-it> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/0x76d58376af106ef8> a provai:ModelCall ;
+    rdfs:label "chat" ;
+    prov:endedAtTime "2026-10-02T15:54:37.660828+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:34.253623+00:00"^^xsd:dateTime ;
+    prov:used <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/0x76d58376af106ef8-input> ;
+    prov:wasAssociatedWith <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/coordinator> ;
+    provai:inputTokens 46 ;
+    provai:maxTokens 1000 ;
+    provai:outputTokens 12 ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/5e0aa2bdaee9442d8d9dad9338020d21> ;
+    provai:status "completed" ;
+    provai:temperature 0.2 ;
+    provai:usedModel <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/model/openai%2Fgoogle%2Fgemma-4-26b-a4b-it> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/11252989b77542fbbf8f197c686611f1> a provai:Step ;
+    rdfs:label "step 1" ;
+    prov:endedAtTime "2026-10-02T15:54:47.261588+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:46.263314+00:00"^^xsd:dateTime ;
+    provai:iteration 2 ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/69b2d2c038904b1cbfa30f0e477bc4b4> ;
+    provai:status "completed" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/1d88c69e5c274a8eb453c1976bc71bd5> a provai:Step ;
+    rdfs:label "review" ;
+    prov:endedAtTime "2026-10-02T15:54:47.277783+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:47.272286+00:00"^^xsd:dateTime ;
+    prov:used <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/50ea3cce112a4fa2a1886a591161240b-output> ;
+    provai:iteration 1 ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/ccda7e7ccb52415fabcbe0d7fc4741db> ;
+    provai:status "completed" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/1e77f4f4856947539115383567b22d6d> a provai:ModelCall ;
+    rdfs:label "chat" ;
+    prov:endedAtTime "2026-10-02T15:54:48.452620+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:47.349709+00:00"^^xsd:dateTime ;
+    prov:used <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/1e77f4f4856947539115383567b22d6d-input> ;
+    prov:wasAssociatedWith <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/writer> ;
+    provai:cost 0.00001857 ;
+    provai:finishReason "tool_calls" ;
+    provai:inputTokens 153 ;
+    provai:maxTokens 1000 ;
+    provai:outputTokens 16 ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/05325aa3c91c434898a283c37374a9f3> ;
+    provai:status "completed" ;
+    provai:temperature 0.2 ;
+    provai:usedModel <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/model/openai%2Fgoogle%2Fgemma-4-26b-a4b-it> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/38bac4dbf9d3467a8ca1ad7d2d2e1a12> a provai:ModelCall ;
+    rdfs:label "chat" ;
+    prov:endedAtTime "2026-10-02T15:54:42.264402+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:41.557668+00:00"^^xsd:dateTime ;
+    prov:used <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/38bac4dbf9d3467a8ca1ad7d2d2e1a12-input>,
+        <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/b021557826f14bbb821e690211372d82-result> ;
+    prov:wasAssociatedWith <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/facts_agent> ;
+    provai:cost 0.0000144 ;
+    provai:finishReason "stop" ;
+    provai:inputTokens 136 ;
+    provai:maxTokens 1000 ;
+    provai:outputTokens 20 ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/d5fe153303114f9091f2fefbc3f7fd76> ;
+    provai:status "completed" ;
+    provai:temperature 0.2 ;
+    provai:usedModel <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/model/openai%2Fgoogle%2Fgemma-4-26b-a4b-it> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/3b785633bdbe4d87ae12179feda7f093> a provai:ModelCall ;
+    rdfs:label "chat" ;
+    prov:endedAtTime "2026-10-02T15:54:42.259883+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:41.554882+00:00"^^xsd:dateTime ;
+    prov:used <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/3b785633bdbe4d87ae12179feda7f093-input>,
+        <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/3f80d8beb7444def8df7acfd345fcc83-result> ;
+    prov:wasAssociatedWith <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/weather_agent> ;
+    provai:cost 0.00001557 ;
+    provai:finishReason "tool_calls" ;
+    provai:inputTokens 149 ;
+    provai:maxTokens 1000 ;
+    provai:outputTokens 20 ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/0268234b20c9452f8d315521519c8147> ;
+    provai:status "completed" ;
+    provai:temperature 0.2 ;
+    provai:usedModel <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/model/openai%2Fgoogle%2Fgemma-4-26b-a4b-it> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/54e84a2c98cc41e9875896fc51326cae> a provai:MemoryAccess ;
+    rdfs:label "memory write" ;
+    prov:endedAtTime "2026-10-02T15:54:42.369803+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:42.369778+00:00"^^xsd:dateTime ;
+    prov:wasAssociatedWith <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/facts_agent> ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/aa771e64857849b2bda50107a99b1778> ;
+    provai:status "completed" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/6008254371c34181a9ccf7db162448a7> a provai:ToolCall ;
+    rdfs:label "get_weather" ;
+    prov:endedAtTime "2026-10-02T15:54:42.450983+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:42.267360+00:00"^^xsd:dateTime ;
+    prov:used <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/3b785633bdbe4d87ae12179feda7f093-output>,
+        <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/6008254371c34181a9ccf7db162448a7-arguments> ;
+    prov:wasAssociatedWith <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/weather_agent> ;
+    provai:attempt 2 ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/0268234b20c9452f8d315521519c8147> ;
+    provai:retryOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/3f80d8beb7444def8df7acfd345fcc83> ;
+    provai:status "completed" ;
+    provai:usedTool <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/tool/get_weather> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/796010eb565444f2bd07e82e1e686d6e> a provai:ModelCall ;
+    rdfs:label "chat" ;
+    prov:endedAtTime "2026-10-02T15:54:41.270237+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:37.682846+00:00"^^xsd:dateTime ;
+    prov:used <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/796010eb565444f2bd07e82e1e686d6e-input> ;
+    prov:wasAssociatedWith <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/facts_agent> ;
+    provai:cost 0.00001317 ;
+    provai:finishReason "tool_calls" ;
+    provai:inputTokens 93 ;
+    provai:maxTokens 1000 ;
+    provai:outputTokens 16 ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/407983989cd1408e8f196c063cd2a488> ;
+    provai:status "completed" ;
+    provai:temperature 0.2 ;
+    provai:usedModel <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/model/openai%2Fgoogle%2Fgemma-4-26b-a4b-it> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/79c793ef611b4356a35f3835151fafe3> a provai:ModelCall ;
+    rdfs:label "chat" ;
+    prov:endedAtTime "2026-10-02T15:54:41.264179+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:37.758664+00:00"^^xsd:dateTime ;
+    prov:used <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/79c793ef611b4356a35f3835151fafe3-input> ;
+    prov:wasAssociatedWith <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/weather_agent> ;
+    provai:cost 0.00001344 ;
+    provai:finishReason "tool_calls" ;
+    provai:inputTokens 96 ;
+    provai:maxTokens 1000 ;
+    provai:outputTokens 16 ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/85d3844ab8ef43d6b59def0a3915c58c> ;
+    provai:status "completed" ;
+    provai:temperature 0.2 ;
+    provai:usedModel <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/model/openai%2Fgoogle%2Fgemma-4-26b-a4b-it> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/7d5265202b1d46619a8fc15100533cef> a provai:Step ;
+    rdfs:label "before_tool hook" ;
+    prov:endedAtTime "2026-10-02T15:54:53.478161+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:53.477547+00:00"^^xsd:dateTime ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/fc458c712f45400ba6cbd9460320c3e3> ;
+    provai:status "completed" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/7daf181650c64053b673f3248faa6478> a provai:Step ;
+    rdfs:label "step 2" ;
+    prov:endedAtTime "2026-10-02T15:54:44.880834+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:42.452320+00:00"^^xsd:dateTime ;
+    provai:iteration 3 ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/2f0548ff60984fa5b7cf7f8456e4d0dd> ;
+    provai:status "completed" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/8d26d4356d2f4ba9824556bc559940e0> a provai:Handoff ;
+    rdfs:label "handoff" ;
+    prov:endedAtTime "2026-10-02T15:54:44.969239+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:44.882325+00:00"^^xsd:dateTime ;
+    prov:used <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/2f0548ff60984fa5b7cf7f8456e4d0dd-output>,
+        <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/7c034877782e47f5906404b90292cb04-output> ;
+    provai:fromAgent <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/coordinator> ;
+    provai:iteration 1 ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/ccda7e7ccb52415fabcbe0d7fc4741db> ;
+    provai:status "completed" ;
+    provai:toAgent <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/writer> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/97090fc7f473423b860d293e2d3a97fa> a provai:ModelCall ;
+    rdfs:label "chat" ;
+    prov:endedAtTime "2026-10-02T15:54:53.458344+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:51.093726+00:00"^^xsd:dateTime ;
+    prov:used <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/97090fc7f473423b860d293e2d3a97fa-input> ;
+    prov:wasAssociatedWith <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/writer> ;
+    provai:cost 0.00002937 ;
+    provai:finishReason "tool_calls" ;
+    provai:inputTokens 143 ;
+    provai:maxTokens 1000 ;
+    provai:outputTokens 55 ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/fc458c712f45400ba6cbd9460320c3e3> ;
+    provai:status "completed" ;
+    provai:temperature 0.2 ;
+    provai:usedModel <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/model/openai%2Fgoogle%2Fgemma-4-26b-a4b-it> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/a6d4ec55d4794e7aa74001e5787af8dc> a provai:ModelCall ;
+    rdfs:label "chat" ;
+    prov:endedAtTime "2026-10-02T15:54:49.579065+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:48.571735+00:00"^^xsd:dateTime ;
+    prov:used <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/88ce3d2e936c4efa8851db7e19be4720-result>,
+        <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/a6d4ec55d4794e7aa74001e5787af8dc-input> ;
+    prov:wasAssociatedWith <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/writer> ;
+    provai:cost 0.00002324 ;
+    provai:finishReason "stop" ;
+    provai:inputTokens 196 ;
+    provai:maxTokens 1000 ;
+    provai:outputTokens 40 ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/d517a8a0ca4a46edb6adf2eb10dd3804> ;
+    provai:status "completed" ;
+    provai:temperature 0.2 ;
+    provai:usedModel <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/model/openai%2Fgoogle%2Fgemma-4-26b-a4b-it> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/aa771e64857849b2bda50107a99b1778> a provai:Step ;
+    rdfs:label "after_run hook" ;
+    prov:endedAtTime "2026-10-02T15:54:42.449851+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:42.267192+00:00"^^xsd:dateTime ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/7c034877782e47f5906404b90292cb04> ;
+    provai:status "completed" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/b021557826f14bbb821e690211372d82> a provai:ToolCall ;
+    rdfs:label "search_facts" ;
+    prov:endedAtTime "2026-10-02T15:54:41.554139+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:41.271819+00:00"^^xsd:dateTime ;
+    prov:used <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/796010eb565444f2bd07e82e1e686d6e-output>,
+        <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/b021557826f14bbb821e690211372d82-arguments> ;
+    prov:wasAssociatedWith <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/facts_agent> ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/407983989cd1408e8f196c063cd2a488> ;
+    provai:status "completed" ;
+    provai:usedTool <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/tool/search_facts> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/b42417a62af14e2f9e0367d92fbfef14> a provai:Step ;
+    rdfs:label "draft_input" ;
+    prov:endedAtTime "2026-10-02T15:54:47.279485+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:47.278508+00:00"^^xsd:dateTime ;
+    prov:used <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/1d88c69e5c274a8eb453c1976bc71bd5-output>,
+        <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/8d26d4356d2f4ba9824556bc559940e0-output> ;
+    provai:iteration 2 ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/ccda7e7ccb52415fabcbe0d7fc4741db> ;
+    provai:status "completed" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/c8565fc54a7044cb9c8c29415f585ed8> a provai:Step ;
+    rdfs:label "review" ;
+    prov:endedAtTime "2026-10-02T15:54:50.976157+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:50.972994+00:00"^^xsd:dateTime ;
+    prov:used <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/539774a5fb0c4d029f6f308943b7b11d-output> ;
+    provai:iteration 2 ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/ccda7e7ccb52415fabcbe0d7fc4741db> ;
+    provai:status "completed" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/d517a8a0ca4a46edb6adf2eb10dd3804> a provai:Step ;
+    rdfs:label "step 1" ;
+    prov:endedAtTime "2026-10-02T15:54:49.864885+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:48.568741+00:00"^^xsd:dateTime ;
+    provai:iteration 2 ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/6ff209c0bca9405a84903d498e6b2e0a> ;
+    provai:status "completed" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/d5fe153303114f9091f2fefbc3f7fd76> a provai:Step ;
+    rdfs:label "step 1" ;
+    prov:endedAtTime "2026-10-02T15:54:42.264747+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:41.557129+00:00"^^xsd:dateTime ;
+    provai:iteration 2 ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/7c034877782e47f5906404b90292cb04> ;
+    provai:status "completed" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/d6087a2c3c054443a74f83add770868b> a provai:ModelCall ;
+    rdfs:label "chat" ;
+    prov:endedAtTime "2026-10-02T15:54:46.256685+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:45.368462+00:00"^^xsd:dateTime ;
+    prov:used <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/d6087a2c3c054443a74f83add770868b-input> ;
+    prov:wasAssociatedWith <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/writer> ;
+    provai:cost 0.00001803 ;
+    provai:finishReason "tool_calls" ;
+    provai:inputTokens 147 ;
+    provai:maxTokens 1000 ;
+    provai:outputTokens 16 ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/1816b01c490b46c7ac134e06aaec20af> ;
+    provai:status "completed" ;
+    provai:temperature 0.2 ;
+    provai:usedModel <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/model/openai%2Fgoogle%2Fgemma-4-26b-a4b-it> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/e7110f04627d4ced979ec66812ce8700> a provai:ModelCall ;
+    rdfs:label "chat" ;
+    prov:endedAtTime "2026-10-02T15:54:44.880390+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:42.452929+00:00"^^xsd:dateTime ;
+    prov:used <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/3f80d8beb7444def8df7acfd345fcc83-result>,
+        <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/6008254371c34181a9ccf7db162448a7-result>,
+        <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/e7110f04627d4ced979ec66812ce8700-input> ;
+    prov:wasAssociatedWith <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/weather_agent> ;
+    provai:cost 0.00002322 ;
+    provai:finishReason "stop" ;
+    provai:inputTokens 188 ;
+    provai:maxTokens 1000 ;
+    provai:outputTokens 21 ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/7daf181650c64053b673f3248faa6478> ;
+    provai:status "completed" ;
+    provai:temperature 0.2 ;
+    provai:usedModel <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/model/openai%2Fgoogle%2Fgemma-4-26b-a4b-it> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/e9e451f2463143ec898936901a323623> a provai:Step ;
+    rdfs:label "draft_input" ;
+    prov:endedAtTime "2026-10-02T15:54:44.987737+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:44.969895+00:00"^^xsd:dateTime ;
+    prov:used <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/8d26d4356d2f4ba9824556bc559940e0-output> ;
+    provai:iteration 1 ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/ccda7e7ccb52415fabcbe0d7fc4741db> ;
+    provai:status "completed" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/eb00de25dbf2471484e44ce50c09ee5f> a provai:ModelCall ;
+    rdfs:label "chat" ;
+    prov:endedAtTime "2026-10-02T15:54:47.259842+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:46.263710+00:00"^^xsd:dateTime ;
+    prov:used <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/5524c28260ad44d79d48531c81517c02-result>,
+        <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/eb00de25dbf2471484e44ce50c09ee5f-input> ;
+    prov:wasAssociatedWith <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/writer> ;
+    provai:cost 0.0000291 ;
+    provai:finishReason "stop" ;
+    provai:inputTokens 190 ;
+    provai:maxTokens 1000 ;
+    provai:outputTokens 40 ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/11252989b77542fbbf8f197c686611f1> ;
+    provai:status "completed" ;
+    provai:temperature 0.2 ;
+    provai:usedModel <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/model/openai%2Fgoogle%2Fgemma-4-26b-a4b-it> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/tool/search_facts> a provai:Tool ;
+    rdfs:label "search_facts" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/tool/send_brief> a provai:Tool ;
+    rdfs:label "send_brief" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/user> a prov:Person ;
+    rdfs:label "user" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/3f80d8beb7444def8df7acfd345fcc83-result> a prov:Entity ;
+    rdfs:label "get_weather result" ;
+    prov:value "{'error': \"Failed to invoke Tool `get_weather` with parameters {'city': 'Lisbon'}. Error: weather service timed out\"}" ;
+    prov:wasGeneratedBy <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/3f80d8beb7444def8df7acfd345fcc83> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/5e0aa2bdaee9442d8d9dad9338020d21-output> a prov:Entity ;
+    rdfs:label "coordinator output" ;
+    prov:value "{\"weather_agent\": [{\"role\": \"user\", \"meta\": {}, \"name\": null, \"content\": [{\"text\": \"Weather in Lisbon?\"}]}], \"facts_agent\": [{\"role\": \"user\", \"meta\": {}, \"name\": null, \"content\": [{\"text\": \"Facts about Lisbon?\"}]}]}" ;
+    prov:wasGeneratedBy <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/5e0aa2bdaee9442d8d9dad9338020d21> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/8d26d4356d2f4ba9824556bc559940e0-output> a prov:Entity ;
+    rdfs:label "handoff output" ;
+    prov:value "{\"messages\": [{\"role\": \"user\", \"meta\": {}, \"name\": null, \"content\": [{\"text\": \"Write a two-sentence brief on Lisbon. Weather: The current weather in Lisbon is 21\\u00b0C with a clear sky.. Facts: Lisbon is the capital of Portugal and lies on the Tagus estuary.. Call read_note for Lisbon first. Reply with the brief only.\"}]}]}" ;
+    prov:wasGeneratedBy <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/8d26d4356d2f4ba9824556bc559940e0> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/92261cdafcfe41d7b529ec17c3b8c5b0-arguments> a prov:Entity ;
+    rdfs:label "send_brief arguments" ;
+    prov:value "{\"text\": \"Lisbon is the capital of Portugal and is situated along the Tagus estuary. The city is currently enjoying a clear sky with a pleasant temperature of 21\\u00b0C.\", \"to\": \"client\"}" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/e7110f04627d4ced979ec66812ce8700-output> a provai:Message ;
+    rdfs:label "model output" ;
+    prov:value "{\"replies\": [\"ChatMessage(_role=<ChatRole.ASSISTANT: 'assistant'>, _content=[TextContent(text='The current weather in Lisbon is 21°C with a clear sky.')], _name=None, _meta={'model': 'google/gemma-4-26b-a4b-it', 'index': 0, 'finish_reason': 'stop', 'usage': {'completion_tokens': 21, 'prompt_tokens': 188, 'total_tokens': 209, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': 0, 'reasoning_tokens': 2, 'rejected_prediction_tokens': None, 'text_tokens': None, 'image_tokens': 0}, 'prompt_tokens_details': {'audio_tokens': 0, 'cache_write_tokens': 0, 'cached_tokens': 0, 'image_tokens': None, 'text_tokens': None, 'video_tokens': 0}, 'cost': 2.322e-05, 'is_byok': False, 'cost_details': {'upstream_inference_cost': 2.322e-05, 'upstream_inference_prompt_cost': 1.692e-05, 'upstream_inference_completions_cost': 6.3e-06}}})\"]}" ;
+    prov:wasGeneratedBy <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/e7110f04627d4ced979ec66812ce8700> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/0268234b20c9452f8d315521519c8147> a provai:Step ;
+    rdfs:label "step 1" ;
+    prov:endedAtTime "2026-10-02T15:54:42.451972+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:41.554496+00:00"^^xsd:dateTime ;
+    provai:iteration 2 ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/2f0548ff60984fa5b7cf7f8456e4d0dd> ;
+    provai:status "completed" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/05325aa3c91c434898a283c37374a9f3> a provai:Step ;
+    rdfs:label "step 0" ;
+    prov:endedAtTime "2026-10-02T15:54:48.568538+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:47.284012+00:00"^^xsd:dateTime ;
+    provai:iteration 1 ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/6ff209c0bca9405a84903d498e6b2e0a> ;
+    provai:status "completed" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/08ce9cd133c84ebba955207ed273186e> a provai:AgentInvocation ;
+    rdfs:label "sender" ;
+    prov:endedAtTime "2026-10-02T15:54:53.556838+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:50.976551+00:00"^^xsd:dateTime ;
+    prov:used <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/c8565fc54a7044cb9c8c29415f585ed8-output> ;
+    prov:wasAssociatedWith <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/writer> ;
+    provai:iteration 1 ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/ccda7e7ccb52415fabcbe0d7fc4741db> ;
+    provai:status "completed" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/1816b01c490b46c7ac134e06aaec20af> a provai:Step ;
+    rdfs:label "step 0" ;
+    prov:endedAtTime "2026-10-02T15:54:46.263258+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:45.367818+00:00"^^xsd:dateTime ;
+    provai:iteration 1 ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/69b2d2c038904b1cbfa30f0e477bc4b4> ;
+    provai:status "completed" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/3f80d8beb7444def8df7acfd345fcc83> a provai:ToolCall ;
+    rdfs:label "get_weather" ;
+    prov:endedAtTime "2026-10-02T15:54:41.554024+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:41.271725+00:00"^^xsd:dateTime ;
+    prov:used <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/3f80d8beb7444def8df7acfd345fcc83-arguments>,
+        <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/79c793ef611b4356a35f3835151fafe3-output> ;
+    prov:wasAssociatedWith <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/weather_agent> ;
+    provai:errorType "Failed to invoke Tool `get_weather` with parameters {'city': 'Lisbon'}. Error: weather service timed out" ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/85d3844ab8ef43d6b59def0a3915c58c> ;
+    provai:status "failed" ;
+    provai:usedTool <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/tool/get_weather> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/407983989cd1408e8f196c063cd2a488> a provai:Step ;
+    rdfs:label "step 0" ;
+    prov:endedAtTime "2026-10-02T15:54:41.557064+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:37.680919+00:00"^^xsd:dateTime ;
+    provai:iteration 1 ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/7c034877782e47f5906404b90292cb04> ;
+    provai:status "completed" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/50ea3cce112a4fa2a1886a591161240b> a provai:AgentInvocation ;
+    rdfs:label "evaluator" ;
+    prov:endedAtTime "2026-10-02T15:54:47.271733+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:47.265622+00:00"^^xsd:dateTime ;
+    prov:used <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/69b2d2c038904b1cbfa30f0e477bc4b4-output> ;
+    prov:wasAssociatedWith <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/evaluator> ;
+    provai:iteration 1 ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/ccda7e7ccb52415fabcbe0d7fc4741db> ;
+    provai:status "completed" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/5524c28260ad44d79d48531c81517c02> a provai:ToolCall ;
+    rdfs:label "read_note" ;
+    prov:endedAtTime "2026-10-02T15:54:46.263139+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:46.257476+00:00"^^xsd:dateTime ;
+    prov:used <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/5524c28260ad44d79d48531c81517c02-arguments>,
+        <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/d6087a2c3c054443a74f83add770868b-output> ;
+    prov:wasAssociatedWith <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/writer> ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/1816b01c490b46c7ac134e06aaec20af> ;
+    provai:status "completed" ;
+    provai:usedTool <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/tool/read_note> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/5e0aa2bdaee9442d8d9dad9338020d21> a provai:AgentInvocation,
+        provai:Routing ;
+    rdfs:label "coordinator" ;
+    prov:endedAtTime "2026-10-02T15:54:37.667594+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:34.162412+00:00"^^xsd:dateTime ;
+    prov:wasAssociatedWith <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/coordinator> ;
+    provai:candidate <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/facts_agent>,
+        <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/translator_agent>,
+        <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/weather_agent> ;
+    provai:iteration 1 ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/ccda7e7ccb52415fabcbe0d7fc4741db> ;
+    provai:reason """```json
+["weather", "facts"]
+```""" ;
+    provai:selected <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/facts_agent>,
+        <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/weather_agent> ;
+    provai:status "completed" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/85d3844ab8ef43d6b59def0a3915c58c> a provai:Step ;
+    rdfs:label "step 0" ;
+    prov:endedAtTime "2026-10-02T15:54:41.554396+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:37.758331+00:00"^^xsd:dateTime ;
+    provai:iteration 1 ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/2f0548ff60984fa5b7cf7f8456e4d0dd> ;
+    provai:status "completed" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/88ce3d2e936c4efa8851db7e19be4720> a provai:ToolCall ;
+    rdfs:label "read_note" ;
+    prov:endedAtTime "2026-10-02T15:54:48.568313+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:48.475605+00:00"^^xsd:dateTime ;
+    prov:used <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/1e77f4f4856947539115383567b22d6d-output>,
+        <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/88ce3d2e936c4efa8851db7e19be4720-arguments> ;
+    prov:wasAssociatedWith <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/writer> ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/05325aa3c91c434898a283c37374a9f3> ;
+    provai:status "completed" ;
+    provai:usedTool <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/tool/read_note> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/92261cdafcfe41d7b529ec17c3b8c5b0> a provai:ToolCall ;
+    rdfs:label "send_brief" ;
+    prov:endedAtTime "2026-10-02T15:54:53.555519+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:53.478465+00:00"^^xsd:dateTime ;
+    prov:used <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/92261cdafcfe41d7b529ec17c3b8c5b0-arguments>,
+        <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/97090fc7f473423b860d293e2d3a97fa-output> ;
+    prov:wasAssociatedWith <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/writer> ;
+    prov:wasInformedBy <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/053948fe97c94457a0fa4c31c40e28c6> ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/fc458c712f45400ba6cbd9460320c3e3> ;
+    provai:status "completed" ;
+    provai:usedTool <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/tool/send_brief> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/tool/get_weather> a provai:Tool ;
+    rdfs:label "get_weather" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/tool/read_note> a provai:Tool ;
+    rdfs:label "read_note" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/a6d4ec55d4794e7aa74001e5787af8dc-output> a provai:Message ;
+    rdfs:label "model output" ;
+    prov:value "{\"replies\": [\"ChatMessage(_role=<ChatRole.ASSISTANT: 'assistant'>, _content=[TextContent(text='Lisbon is the capital of Portugal and is situated along the Tagus estuary. The city is currently enjoying a clear sky with a pleasant temperature of 21°C.')], _name=None, _meta={'model': 'google/gemma-4-26b-a4b-it', 'index': 0, 'finish_reason': 'stop', 'usage': {'completion_tokens': 40, 'prompt_tokens': 196, 'total_tokens': 236, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': 0, 'reasoning_tokens': 2, 'rejected_prediction_tokens': None, 'text_tokens': None, 'image_tokens': 0}, 'prompt_tokens_details': {'audio_tokens': 0, 'cache_write_tokens': 0, 'cached_tokens': 160, 'image_tokens': None, 'text_tokens': None, 'video_tokens': 0}, 'cost': 2.324e-05, 'is_byok': False, 'cost_details': {'upstream_inference_cost': 2.324e-05, 'upstream_inference_prompt_cost': 1.124e-05, 'upstream_inference_completions_cost': 1.2e-05}}})\"]}" ;
+    prov:wasGeneratedBy <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/a6d4ec55d4794e7aa74001e5787af8dc> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/eb00de25dbf2471484e44ce50c09ee5f-output> a provai:Message ;
+    rdfs:label "model output" ;
+    prov:value "{\"replies\": [\"ChatMessage(_role=<ChatRole.ASSISTANT: 'assistant'>, _content=[TextContent(text='Lisbon is the capital of Portugal and is situated along the Tagus estuary. The city is currently enjoying a clear sky with a pleasant temperature of 21°C.')], _name=None, _meta={'model': 'google/gemma-4-26b-a4b-it', 'index': 0, 'finish_reason': 'stop', 'usage': {'completion_tokens': 40, 'prompt_tokens': 190, 'total_tokens': 230, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': 0, 'reasoning_tokens': 2, 'rejected_prediction_tokens': None, 'text_tokens': None, 'image_tokens': 0}, 'prompt_tokens_details': {'audio_tokens': 0, 'cache_write_tokens': 0, 'cached_tokens': 0, 'image_tokens': None, 'text_tokens': None, 'video_tokens': 0}, 'cost': 2.91e-05, 'is_byok': False, 'cost_details': {'upstream_inference_cost': 2.91e-05, 'upstream_inference_prompt_cost': 1.71e-05, 'upstream_inference_completions_cost': 1.2e-05}}})\"]}" ;
+    prov:wasGeneratedBy <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/eb00de25dbf2471484e44ce50c09ee5f> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/539774a5fb0c4d029f6f308943b7b11d> a provai:AgentInvocation ;
+    rdfs:label "evaluator" ;
+    prov:endedAtTime "2026-10-02T15:54:50.968293+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:49.869482+00:00"^^xsd:dateTime ;
+    prov:used <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/6ff209c0bca9405a84903d498e6b2e0a-output> ;
+    prov:wasAssociatedWith <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/evaluator> ;
+    provai:iteration 2 ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/ccda7e7ccb52415fabcbe0d7fc4741db> ;
+    provai:status "completed" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/69b2d2c038904b1cbfa30f0e477bc4b4> a provai:AgentInvocation ;
+    rdfs:label "writer" ;
+    prov:endedAtTime "2026-10-02T15:54:47.262111+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:44.988415+00:00"^^xsd:dateTime ;
+    prov:used <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/e9e451f2463143ec898936901a323623-output> ;
+    prov:wasAssociatedWith <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/writer> ;
+    provai:iteration 1 ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/ccda7e7ccb52415fabcbe0d7fc4741db> ;
+    provai:status "completed" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/6ff209c0bca9405a84903d498e6b2e0a> a provai:AgentInvocation ;
+    rdfs:label "writer" ;
+    prov:endedAtTime "2026-10-02T15:54:49.865801+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:47.280049+00:00"^^xsd:dateTime ;
+    prov:used <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/b42417a62af14e2f9e0367d92fbfef14-output> ;
+    prov:wasAssociatedWith <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/writer> ;
+    provai:iteration 2 ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/ccda7e7ccb52415fabcbe0d7fc4741db> ;
+    provai:status "completed" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/fc458c712f45400ba6cbd9460320c3e3> a provai:Step ;
+    rdfs:label "step 0" ;
+    prov:endedAtTime "2026-10-02T15:54:53.555755+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:51.091869+00:00"^^xsd:dateTime ;
+    provai:iteration 1 ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/08ce9cd133c84ebba955207ed273186e> ;
+    provai:status "completed" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/38bac4dbf9d3467a8ca1ad7d2d2e1a12-output> a provai:Message ;
+    rdfs:label "model output" ;
+    prov:value "{\"replies\": [\"ChatMessage(_role=<ChatRole.ASSISTANT: 'assistant'>, _content=[TextContent(text='Lisbon is the capital of Portugal and lies on the Tagus estuary.')], _name=None, _meta={'model': 'google/gemma-4-26b-a4b-it', 'index': 0, 'finish_reason': 'stop', 'usage': {'completion_tokens': 20, 'prompt_tokens': 136, 'total_tokens': 156, 'completion_tokens_details': {'accepted_prediction_tokens': None, 'audio_tokens': 0, 'reasoning_tokens': 2, 'rejected_prediction_tokens': None, 'text_tokens': None, 'image_tokens': 0}, 'prompt_tokens_details': {'audio_tokens': 0, 'cache_write_tokens': 0, 'cached_tokens': 96, 'image_tokens': None, 'text_tokens': None, 'video_tokens': 0}, 'cost': 1.44e-05, 'is_byok': False, 'cost_details': {'upstream_inference_cost': 1.44e-05, 'upstream_inference_prompt_cost': 8.4e-06, 'upstream_inference_completions_cost': 6e-06}}})\"]}" ;
+    prov:wasGeneratedBy <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/38bac4dbf9d3467a8ca1ad7d2d2e1a12> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/2f0548ff60984fa5b7cf7f8456e4d0dd> a provai:AgentInvocation ;
+    rdfs:label "weather_agent" ;
+    prov:endedAtTime "2026-10-02T15:54:44.881316+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:37.747964+00:00"^^xsd:dateTime ;
+    prov:used <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/5e0aa2bdaee9442d8d9dad9338020d21-output> ;
+    prov:wasAssociatedWith <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/weather_agent> ;
+    provai:iteration 1 ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/ccda7e7ccb52415fabcbe0d7fc4741db> ;
+    provai:status "completed" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/7c034877782e47f5906404b90292cb04> a provai:AgentInvocation ;
+    rdfs:label "facts_agent" ;
+    prov:endedAtTime "2026-10-02T15:54:42.450752+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:37.668450+00:00"^^xsd:dateTime ;
+    prov:used <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/5e0aa2bdaee9442d8d9dad9338020d21-output> ;
+    prov:wasAssociatedWith <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/facts_agent> ;
+    provai:iteration 1 ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/ccda7e7ccb52415fabcbe0d7fc4741db> ;
+    provai:status "completed" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/evaluator> a provai:Agent ;
+    rdfs:label "evaluator" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/coordinator> a provai:Agent ;
+    rdfs:label "coordinator" ;
+    prov:actedOnBehalfOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/user> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/facts_agent> a provai:Agent ;
+    rdfs:label "facts_agent" ;
+    prov:actedOnBehalfOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/coordinator> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/notes%2FLisbon%2F1> a provai:MemoryRecord ;
+    rdfs:label "Lisbon" ;
+    prov:qualifiedDerivation <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/notes%2FLisbon%2F1/derivation/38bac4dbf9d3467a8ca1ad7d2d2e1a12-output> ;
+    prov:value "Lisbon is the capital of Portugal and lies on the Tagus estuary." ;
+    prov:wasDerivedFrom <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/entity/38bac4dbf9d3467a8ca1ad7d2d2e1a12-output> ;
+    prov:wasGeneratedBy <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/54e84a2c98cc41e9875896fc51326cae> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/weather_agent> a provai:Agent ;
+    rdfs:label "weather_agent" ;
+    prov:actedOnBehalfOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/coordinator> .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/model/openai%2Fgoogle%2Fgemma-4-26b-a4b-it> a provai:Model ;
+    rdfs:label "google/gemma-4-26b-a4b-it" ;
+    provai:provider "openai" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/step/ccda7e7ccb52415fabcbe0d7fc4741db> a provai:Step ;
+    rdfs:label "pipeline run" ;
+    prov:endedAtTime "2026-10-02T15:54:53.560529+00:00"^^xsd:dateTime ;
+    prov:startedAtTime "2026-10-02T15:54:34.161919+00:00"^^xsd:dateTime ;
+    provai:partOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/run> ;
+    provai:status "completed" .
+
+<https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/writer> a provai:Agent ;
+    rdfs:label "writer" ;
+    prov:actedOnBehalfOf <https://w3id.org/prov-ai/run/haystack/hs-20261002T155430/agent/coordinator> .
+
